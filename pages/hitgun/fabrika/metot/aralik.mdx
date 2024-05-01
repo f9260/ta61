@@ -1,0 +1,88 @@
+# Aralık
+
+import Image from 'next/image'
+import metotaralik from 'app-images/metot-aralık.jpg'
+import metotaralikrastgele from 'app-images/metot-aralık-rastgele.jpg'
+import metotaraliksirali from 'app-images/metot-aralık-sıralı.jpg'
+import metotaraliksiralisure from 'app-images/metot-aralık-sıralı-süre.jpg'
+
+
+Aralık metodu, girilen zaman aralıkları üzerinde çalışmalar yapılmasını sağlar.
+
+Rastgele ve Sıralı olmak üzere iki alt modu bulunur.
+
+<Image src={metotaralik} />
+
+## Rastgele
+
+Rastgele modu aktifken, girilen zaman aralıkları içerisinde " Üretim Sayısı " bölümüne yazılan miktar kadar içerik üretimi gerçekleştirilir.
+
+### Örnek
+
+
+
+40 dakikalık bir Youtube videosu için oluşturulan ayarlar şu şekilde :
+
+<Image src={metotaralikrastgele} />
+
+
+| URL | youtube.com/video-id |
+| :----- | :----: |
+| Üretim Sayısı | 3 |
+| Süre Aralıkları | ```2:14-3:21```,```6:16-9:19```,```17:21-24:18```,```34:13-39:21```    |
+| Video Süresi/Sabit | 15 |
+| Metot | Aralık/Rastgele  |
+
+
+#### Sonuç
+
+
+| Aralık | Üretilen Video Sayısı |
+| :----- | :----: |
+| 2:14-3:21 | 3 |
+| 6:16-9:19 | 3 |
+| 17:21-24:18 | 3 |
+| 34:13-39:21 | 3 |
+
+
+Her bir zaman aralığı için rastgele biçimde ayrı ayrı 15 saniyelik 3 adet video üretilmiş olur.
+
+Bu çalışma sonunda elimizde toplam **12 adet** video oluşur.
+
+
+## Sıralı
+<Image src={metotaraliksirali} />
+
+Sıralı seçeneği aktif durumdayken, girilen zaman aralıklarının **tamamı** için içerik üretimi gerçekleşir.
+
+### Örnek
+
+Yukarıda yer alan örnekte birkaç küçük değişiklik uygulayarak devam edelim.
+
+40 dakikalık bir Youtube videosu için oluşturulan ayarlar şu şekilde :
+
+<Image src={metotaraliksiralisure} />
+
+| URL | youtube.com/video-id |
+| :----- | :----: |
+| Süre Aralıkları | ```2:14-3:21```,```6:16-9:19```,```17:21-20:18```,```34:13-36:21```    |
+| Video Süresi/Sabit | 45 |
+| Metot | Aralık/Düzenli  |
+
+
+#### Sonuç
+
+
+| Aralık | Üretim Yapılan Süreler | Üretilen Video Sayısı |
+| :----- | :----: | :----: |
+| 2:14-3:21 | ```2:14-2:59```,```2:59-3:44``` | 2 |
+| 6:16-9:19 | ```6:16-7:01```,```7:01-7:46```,```7:46-8:31```,```8:31-9:16```,```9:16-10:01``` | 5 |
+| 17:21-20:18 | ```17:21-18:06```,```18:06-18:51```,```18:51-19:34```,```19:34-20:19``` | 4 |
+| 34:13-36:21 | ```34:13-34:58```,```34:58-35:43```,```35:43-36:28``` | 3 |
+
+
+Görüldüğü gibi, farklı zaman aralıkları için farklı sayıda içerikler oluşturuldu.
+
+Oluşturulan her içerik 45 saniye uzunluğundadır. 
+
+Üretilen son içeriğin süresi, girilen zaman aralığını aştığında içerik üretimi sonlandırılır.

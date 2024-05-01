@@ -1,0 +1,58 @@
+import Image from 'next/image'
+import kaynak from 'app-images/kaynak.jpg'
+
+# Kaynak
+
+
+<Image src={kaynak} />
+
+
+Düzenlemek istediğimiz içeriğin belirlendiği bölümdür.
+
+İçerisinde **Videolar**, **URL** ve **URL List** adında üç seçenek yer alır.
+
+## Videolar
+
+Bilgisayarımızdaki videolar ile düzenleme işlemi gerçekleştirmek istiyorsak bu seçenek kullanılır.
+
+Videolar bir klasör içine eklenir ve klasör bu seçenek ile sisteme tanımlanır.
+
+
+## URL
+
+URL List ile birlikte **Hit Gun** moduna ait bir özelliktir.
+
+Yalnızca Youtube videoları için kullanılabilir.
+
+Çalışma yapmak istediğimiz Youtube videosunun linki bu alandan sisteme tanımlanır.
+
+
+## URL List
+
+Birden fazla Youtube videosu ile aynı anda işlem gerçekleştirmek istiyorsak URL List kullanılır.
+
+Linkler bir not defteri içerisine alt alta eklendikten sonra not defteri sisteme tanımlanır.
+
+
+import { Callout } from 'nextra/components'
+ 
+<Callout type="warning" emoji="⚠️">
+
+Hit Gun modunda kaynak kullanımı için işlem sırası vardır. 
+
+</Callout>
+
+
+<Callout type="warning" emoji="⚠️">
+
+URL List aktif durumdaysa sistem diğer seçenekleri yok sayar ve URL List üzerinden işlem yapmaya çalışır.
+
+</Callout>
+
+<Callout type="warning" emoji="⚠️">
+
+URL List kapalıysa URL'ye göre işlem yürütülür. Eğer URL'de herhangi bir link tanımlanmadıysa, Videolar seçeneği kullanılır.
+
+</Callout>
+
+

@@ -1,0 +1,72 @@
+# Video Birleştir
+
+Video Birleştir seçeneği etkinleştirildiğinde, üretilmek istenen içeriklere yeni videolar entegre edilebilir.
+
+Hit Gun sisteminde yer alan Eşitle özelliğine benzer bir yapıdadır.
+
+**Süre Ayarı, Ana Video Konumu, Ana Video Oranı, Birleştirilen Video Opaklığı** ve **Birleştirilen Video Sesi** olmak üzere 5 ayarı bulunur.
+
+
+<video autoPlay muted loop controls>
+  <source src="/videobirlestir.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+
+
+## Süre Ayarı
+
+Varsayılan, Rastgele ve Özel Süre adında üç ayrı süre ayarı bulunmaktadır.
+
+### Varsayılan
+
+Varsayılan süre ayarı, birleştirilen videoyu 10. saniyesinden itibaren başlatır. Bunun temel sebebi, birleştirien videoda intro olma ihtimalidir.
+
+Doğrudan içeriğin birleştirilmesi adına 10. saniyesinden itibaren birleştirme süreci başlar.
+
+### Rastgele
+
+Birleştirme işlemini, birleştirilen videonun rastgele bir süresinden başlatır.
+
+Örneğin 40 dakikalık bir videoyu birleştirilen video olarak kullanmayı tercih ettiğinizde, çalışma yapılan her video için birleştirilen videonun farklı sürelerinden başlanır.
+
+-- buralara video anlatım --
+
+### Özel Süre
+
+Birleştirilen videonun hangi süresinden başlamayı tercih ediyorsanız o süreyi girebileceğiniz alandır. 
+
+import { Callout } from 'nextra/components'
+ 
+<Callout type="warning" emoji="⚠️">
+  Özel süre, saniye cinsinden girilir.
+</Callout>
+
+
+## Ana Video Konumu
+
+`Hit Gun/Eşitle` yapısında olduğu gibi **Video Birleştir** yapısında da ana video konumu değiştirilebilir.
+
+Eşitle yapısından farklı olarak, burada sağ ve sol seçenekleri de bulunmaktadır.
+
+Yani ana video üstte, altta, solda veya sağda yer alabilir.
+
+
+## Ana Video Oranı
+
+Ana videonun çerçevede kaplayacağı oranı belirler.
+
+Varsayılan olarak %70'tir.
+
+## Birleştirilen Video Opaklığı
+
+Birleştirilen videonun opaklık ayarı burada yapılır. Videonuzun şeffaflaşmasını istiyorsanız bu ayarı etkinleştirip opaklık ayarı yapabilirsiniz.
+
+-- bilgiler --
+
+## Birleştirilen Video Sesi
+
+Oluşturulan videolarda varsayılan olarak ana video sesi yer alır.
+
+Eğer birleştirdiğiniz videonun sesini kullanmak istiyorsanız bu ayarı etkinleştirebilirsiniz.

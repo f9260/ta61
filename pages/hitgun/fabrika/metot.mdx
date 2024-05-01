@@ -1,0 +1,36 @@
+import Image from 'next/image'
+import stable from 'images/stable.png'
+import range from 'images/range.png'
+import random from 'images/random.png'
+import { Card, Cards } from 'nextra-theme-docs'
+
+# Metot
+
+
+<video autoPlay muted loop controls>
+  <source src="/fabrika-metot.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+İçerik üretim metodu bu alanda belirlenir.
+
+**Rastgele**, **Dakika** ve **Aralık** olmak üzere üç ayrı seçenek bulunur.
+
+Belirlenen seçenek, hedef videolar üzerinden süre ayarları yapılmasını sağlar.
+
+Hit Gun sisteminin en temel yapılarından birisidir. Çalışmalar bu yapı üzerine inşa edilir.
+
+
+  <Cards >
+              <Card title="Rastgele" image href="/hitgun/fabrika/metot/rastgele">
+                        <Image src={random} />
+              </Card>
+              <Card title="Dakika" image href="/hitgun/fabrika/metot/dakika">
+                        <Image src={stable} />
+              </Card>
+              <Card title="Aralık" image href="/hitgun/fabrika/metot/aralik">
+                        <Image src={range} />
+              </Card>
+
+            </Cards>

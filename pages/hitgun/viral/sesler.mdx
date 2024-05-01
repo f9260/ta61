@@ -1,0 +1,38 @@
+import Image from 'next/image'
+import ses1 from 'app-images/ses1.jpg'
+import seslist from 'app-images/seslist.jpg'
+import seslist2 from 'app-images/seslist2.jpg'
+import { Card, Cards } from 'nextra-theme-docs'
+
+# Sesler
+
+Sesler, viral içeriklerde kullanılmak istenen seslerin tanımlandığı alandır.
+
+Özel Ses Ekle seçeneği ' Video ' şeklinde işaretlenmediği takdirde, kullanılacak tüm sesler buradan belirlenir.
+
+
+Örnekte; 1,3 ve 4. seslerin kullanımı kararlaştırılmıştır.
+
+
+<Image src={ses1} />
+
+
+Kullanılacak seslerin sıraları, VE3.Plus sisteminde yer alan **viral** klasörü içindeki **list.txt** dosyasıyla belirlenir.
+
+<Image src={seslist} />
+
+**list.txt** dosyası içerisinde ses detayları düzenlenir.
+
+Düzenli  bir sıra oluşturmak adına her ses, bir sayı ile başlatılır.
+
+Ayarlar " | " işareti ile birbirinden ayrılır.
+
+<Image src={seslist2} />
+
+Sesler için özel tanımlar, isimlendirmeler yapılmak isteniyorsa sayının ardndan " - " işareti eklenerek ses dosyası isimlendirilebilir.
+
+Sornasında " | " işareti eklenerek, ses ayarları girilir.
+
+Girilen her ses ayarı, o sahnenin süresini belirler.
+
+

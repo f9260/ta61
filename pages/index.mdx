@@ -1,11 +1,110 @@
-# Introduction
- 
-Welcome to Nextra! This is a basic docs template. You can use it as a starting point for your own project :)
+import { Callout } from 'nextra/components'
+import Image from 'next/image'
+import hitgun from 'images/hitgun.png'
+import boost from 'images/boost.png'
+import multi from 'images/multi.png'
+import single from 'images/single.png'
+import common from 'images/common.png'
+import indextest from 'app-images/test.jpg'
+import { Card, Cards } from 'nextra-theme-docs'
 
-## What is Nextra?
 
-A **simple**, **powerful** and **flexible** site generation framework with everything you love from Next.js.
+# Giriş
 
-## Documentation
+<Callout type="default" emoji="">
+  **Zaman, oldukça kıymetlidir. Aynı zamanda sermayenin kendisidir.**
+</Callout> 
 
-The documentation is available at [https://nextra.site](https://nextra.site).
+
+Günde **üç saat** ayırdığımız bir işi **bizim yerimize yapacak** bir sistem oluşturduğumuz takdirde;
+**her üç günde bir**, başka konulara odaklanabileceğimiz **yeni bir gün kazanıyoruz** demektir.
+
+
+## VE3.Plus
+
+<video autoPlay muted loop controls>
+  <source src="/introduction.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+**VE3.Plus** sizlere **günler, aylar kazandırmayı** hedefleyen gelişmiş ve rakipsiz bir **video düzenleme otomasyonudur**. 
+Birkaç basit ayarla pek çok video düzenleme işlemini tamamlamanızı sağlayarak, sayısız içerik üretme imkanı sunar.
+
+<Callout type="info" emoji="ℹ️">
+  **Video Düzenleme Otomasyonu** oluşturduğunuz ayarları sınırsız sayıda video üzerinde uygulayan, kendi kendine işlem yürüten sistemdir.
+</Callout>
+
+
+## Modlar
+
+VE3.Plus'ın 4 temel modu bulunmaktadır.
+
+
+<div className="container">
+
+            <Cards>
+              <Card image href="/hitgun">
+                        <Image src={hitgun} />
+              </Card>
+            </Cards>
+      <style jsx>{`
+        .container {
+          display:flex;
+          justify-content:center;
+        }
+        p {
+          color: blue;
+        }
+      `}</style>
+</div>
+
+
+<Cards>
+  <Card image href="/hitgun">
+  <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+                <Image src={boost} objectFit="cover" />
+          </div>
+
+  </Card>
+  <Card image href="/hitgun">
+  <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+                <Image src={multi} objectFit="cover" />
+          </div>
+
+  </Card>
+  <Card image href="/hitgun">
+  <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+                <Image src={single} objectFit="cover" />
+          </div>
+
+  </Card>
+
+</Cards>
+
+
+
+Bu modların yanı sıra, tüm modlarda kullanılan ortak özellikleri de barındırır.
+
+Ortak özellikler içerisinde; video birleştirme, görsel, ses, logo ekleme, kırpma, zoom vb. seçenekler yer alır.
+
+
+
+          
+
+<div className="container2">
+
+            <Cards>
+              <Card title="Ortak Özellikler" image href="/hitgun">
+                        <Image src={common} />
+              </Card>
+            </Cards>
+      <style jsx>{`
+        .container2 {
+          display:flex;
+          justify-content:center;
+        }
+        p {
+          color: blue;
+        }
+      `}</style>
+</div>

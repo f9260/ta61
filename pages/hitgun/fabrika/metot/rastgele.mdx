@@ -1,0 +1,43 @@
+import Image from 'next/image'
+import metotrastgele from 'app-images/metot-rastgele.jpg'
+
+# Rastgele
+
+Rastgele metodu, hedef videonun rastgele bir  süresinin seçilmesini sağlar.
+
+Örneğin 2 saatlik bir Youtube videosu üzerinden 9 adet içerik oluşturmak istediğimizi varsayalım.
+
+
+
+
+<Image src={metotrastgele} />
+
+
+### Örnek
+
+| URL | youtube.com/video-id |
+| :----- | :----: |
+| Üretim Sayısı |  9   |
+| Video Süresi/Sabit | 30 |
+| Metot | Rastgele  |
+
+
+Yukarıdaki ayarlar sonrası, 2 saatlik video içerisinde rastgele 9 adet başlangıç süresi belirlenir ve 30 saniyelik içerikler oluşturulur.
+
+### Sonuç
+
+| Video Sırası | Başlangıç | Bitiş |
+| :-----: | :----: | :----: | 
+| 1 | 14:36 | 15:06 |
+| 2 | 25:13 | 25:43 |
+| 3 | 29:42 | 30:12 |
+| 4 | 43:17 | 43:47 |
+| 5 | 1:11:24 | 1:11:54 |
+| 6 | 1:32:19 | 1:32:49 |
+| 7 | 1:43:05 | 1:43:35 |
+| 8 | 1:51:44 | 1:51:14 |
+| 9 | 1:55:32 | 1:56:02 |
+
+
+9 adet video, tabloda yer alan süre aralıklarında ayrı ayrı oluşturularak belirlediğiniz klasöre **mp4** formatında kaydedilir. 
+

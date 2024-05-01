@@ -1,0 +1,27 @@
+import Image from 'next/image'
+import varsayilan from 'images/default.png'
+import ozel from 'images/custom.png'
+import gelismis from 'images/advanced.png'
+import { Card, Cards } from 'nextra-theme-docs'
+
+# Alan
+
+Hit Gun sistemi, **Geniş** seçeneği aktif değilken her daim " dikey " videolar oluşturur.
+
+Alan kısmı ise, bu dikey videoların detaylandırılabildiği bölümdür.
+
+**Varsayılan**, **Özel** ve **Gelişmiş** adında üç ayrı seçeneği bulunur.
+
+
+  <Cards >
+              <Card title="Varsayılan" image href="hitgun/fabrika/alan/varsayilan">
+                        <Image src={varsayilan} />
+              </Card>
+              <Card title="Özel" image href="/hitgun/fabrika/alan/ozel">
+                        <Image src={ozel} />
+              </Card>
+              <Card title="Gelişmiş" image href="/hitgun/fabrika/alan/advanced">
+                        <Image src={gelismis} />
+              </Card>
+
+            </Cards>

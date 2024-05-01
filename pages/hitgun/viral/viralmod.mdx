@@ -1,0 +1,86 @@
+
+# Viral Mod
+
+
+<video autoPlay muted loop controls>
+  <source src="/viral.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+**Sabit** ve **Rastgele** olmak üzere iki adet viral modu bulunmaktadır.
+
+
+## Sabit Mod
+
+Sabit sürelerden oluşan içerikler üretmek istiyorsanız bu mod ihtiyacınızı karşılayacaktır.
+
+
+**Örneğin**
+
+Kullandığınız ses dosyasının 4 adet sahnesi `4.1`,`2.3`,`3.6`,`1.9` süreleri ile belirlenmiş olsun.
+
+Bu 4 adet sahne için 40 dakikalık bir videonun **14:13**, **21:36**, **33:17** ve **38:11** nci dakikalarında yer alan görüntüleri kullanarak içerik üretmek istediniz.
+
+
+**Bu durumda** 
+
+``ilk sahne`` **14:13.** dakikadan başlar ve ``(+4.1)``**14:17.1** ' e dek devam eder.
+
+``ikinci sahne`` **21:36** ' dan başlar ``(+2.3)``**21:38.3** ' e dek devam eder.
+
+``üçüncü sahne`` **33:17** ' den başlar ``(+3.6)``**33:20.6** ' ya dek devam eder.
+
+``son sahne`` ise **38:11** ' den başlar ``(+1.9)``**38:12.9** ' a dek devam eder.
+
+elde edilen görüntülerden, kullanılan ses dosyasıyla yeni bir içerik oluşturulur.
+
+
+<Callout type="info" emoji="ℹ️">
+  Sıralı mod'da girilen sürelere göre üretim gerçekleşir.
+</Callout>
+
+<Callout type="info" emoji="ℹ️">
+  Sıralı mod'da sadece süre girilir. 14:11,21:16,1:27:19 gibi.
+</Callout>
+
+
+## Rastgele Mod
+
+
+Rastgele mod aktif edildiğinde, girdiğiniz süre aralıkları içerisinden rastgele sahneler seçilir ve bu içeriklerle yeni bir video oluşturulur.
+
+
+**Örneğin**
+
+Kullandığınız ses dosyasının 4 adet sahnesi `4.1`,`2.3`,`3.6`,`1.9` süreleri ile belirlenmiş olsun.
+
+Bu 4 adet sahne için 40 dakikalık bir videonun **5-13**, **14-18**, **21-27** ve **31-36** nci dakikaları arasında yer alan görüntüleri kullanarak içerik üretmek istediniz.
+
+
+Bu durumda, girilen süre aralıklarından rastgele süreler seçilir ve bu sürelerden başlayarak ilgili sahne üretimleri gerçekleştirilir.
+
+
+``ilk sahne`` **7:25.** dakikadan başlar ve ``(+4.1)``**7:29.1** ' e dek devam eder.
+
+``ikinci sahne`` **16:13** ' dan başlar ``(+2.3)``**16:15.3** ' e dek devam eder.
+
+``üçüncü sahne`` **24:12** ' den başlar ``(+3.6)``**24:15.6** ' ya dek devam eder.
+
+``son sahne`` ise **33:28** ' den başlar ``(+1.9)``**33:29.9** ' a dek devam eder.
+
+gibi gibi.
+
+import { Callout } from 'nextra/components'
+
+<Callout type="info" emoji="ℹ️">
+  Rastgele modda **``kullanılan her ses için``** **Üretim Sayısı**'na girilen değer kadar içerik üretimi gerçekleştirilir.
+</Callout>
+
+<Callout type="info" emoji="ℹ️">
+  Rastgele modda süre aralıkları girilir. **``14-21``**,**``18-39``**,**``41-1:22``** gibi.
+</Callout>
+
+<Callout type="info" emoji="ℹ️">
+  Süre aralıkları dakika ve saat cinsinden belirlenir.
+</Callout>

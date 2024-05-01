@@ -1,0 +1,78 @@
+# Dakika
+
+Dakika metodu, hedef videonun dilediğiniz sürelerinden içerik üretmenizi sağlar.
+
+**Süre** ve **Bölüm** adında iki alt modu bulunur.
+
+
+import Image from 'next/image'
+import metotdakika from 'app-images/metot-dakika.jpg'
+import metotdakikasure from 'app-images/metot-dakika-süre.jpg'
+import metotdakikabolum from 'app-images/metot-dakika-bölüm.jpg'
+
+
+<Image src={metotdakika} />
+
+
+
+
+
+## Süre
+
+Kesitlerini oluşturmak istediğiniz sahnelerin başlangıç sürelerini belirlediğiniz moddur.
+
+İşlem gerçekleştirmek istenen süreler " virgül (,) " ile birbirinden ayrılarak(1:13,2:46,7:19,26:12 gibi) bir not defterine eklenir. 
+Not defteri, **Dakikalar** adındaki bölümden sisteme tanımlanır.
+
+<Image src={metotdakikasure} />
+
+
+### Örnek
+
+30 dakikalık bir Youtube videosundan 4 adet sahneyi çıkarmak istediğimizi düşünelim.
+
+| URL | youtube.com/video-id |
+| :----- | :----: |
+| Dakikalar | ```1:13```,```2:46```,```7:19```,```26:12```   |
+| Video Süresi/Sabit | 40 |
+| Metot | Dakika/Süre  |
+
+
+### Sonuç
+
+| Video Sırası | Başlangıç | Bitiş |
+| :-----: | :----: | :----: | 
+| 1 | 1:13 | 1:53 |
+| 2 | 2:46 | 3:26 |
+| 3 | 7:19 | 7:59 |
+| 4 | 26:12 | 26:52 |
+
+İşlemler tamamlandığında, tabloda gösterilen süre aralıklarından oluşturulan 4 adet yeni video bilgisayarınızda belirlediğiniz klasöre kaydedilir.
+
+
+## Bölüm
+
+**Video Süresi** girmek yerine dilediğiniz bir zaman aralığını seçmek istiyorsanız Bölüm modunu kullanabilirsiniz.
+
+Bu özellik sayesinde özel zaman aralıkları belirleyip dilediğiniz tüm sahneleri kaydedebilirsiniz.
+
+Zaman aralıkları " - " işareti ile ifade edilmeli ve farklı sahneler birbirinden " virgül (,) " ile ayrılmalıdır.
+
+<Image src={metotdakikabolum} />
+
+
+### Örnek
+
+
+Bilgisayarımızda bulunan 3 saatlik bir videonun 6 farklı sahnesinden ayrı ayrı içerikler oluşturmak isteyelim.
+
+
+| Videolar | C://Dosya Yolu/dosya-adı.mp4 |
+| :----- | :----: |
+| Dakikalar | ```14:21-16:35```,```26:19-32:13```,```45:54-56:12```,```58:17-1:16:12```,```1:45:18-2:14:42```,```2:27:13-2:43:19``` |
+| Metot | Dakika/Bölüm  |
+
+
+
+Bu çalışma sonucunda ilgili süre aralıklarından oluşan 6 adet içerik, belirlediğimiz çıktı klasörü içerisinde oluşturulur.
+

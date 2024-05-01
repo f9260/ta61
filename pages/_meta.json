@@ -1,7 +1,12 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  "index": "Genel Bakış",
+  "hitgun": "Hit Gun",
+  "boost":"Boost",
+  "multi":"Multi",
+  "single":"Single",
+  "ortak":"Ortak",
+  "testtt":"testtt1",
+ 
   "about": {
     "title": "About",
     "type": "page"
@@ -12,4 +17,5 @@
     "href": "https://twitter.com/shuding_",
     "newWindow": true
   }
+  
 }

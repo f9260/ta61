@@ -1,0 +1,57 @@
+# Görsel Ekle
+
+Videolarınıza görsel ekleyebileceğiniz seçenektir.
+
+Toplamda 5 adete kadar görsel kullanabilirsiniz.
+
+Bir klasör içerisine kullanmak istediğiniz görselleri sırayla ekleyin ve Görseller bölümünden klasörü sisteme tanımlayın.
+
+Kaç görsel kullanmak istediğinizi Görsel Sayısı yazan bölümden seçin.
+
+Ardından Görsel Ayarları bölümünden detaylarını oluşturabilirsiniz.
+
+
+
+<video autoPlay muted loop controls>
+  <source src="/gorselekle.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+
+## Görsel Ayarları
+
+Eklenen görsellerin Genişlik, Yükseklik, X ve Y koordinat ayarları buradan yapılır.
+
+Eklediğiniz görsel sayısına göre her görselin ayarını " **::** " ifadesi ile oluşturabilirsiniz.
+
+### Örnek
+
+Çalışmalarımıza 4 adet görsel eklemek istediğimizi varsayalım.
+
+4 adet görseli bir klasör içerisine koyup sisteme tanımladık.
+
+Ardından Görsel Sayısı'nı 4 olarak belirledik.
+
+** -- buralara step falan yapılabilir -- **
+
+Görsellerimizin çözünürlüklerini ve hangi konumlarda yer almasını arzu ediyorsak konum bilgilerini girmemiz gerekir.
+
+-- görsellerle ifade edilecek --
+
+Örnek çözünürlükler ve konumlar oluşturalım.
+
+import { Callout } from 'nextra/components'
+ 
+<Callout type="info" emoji="ℹ️">
+  İşlem sırası : Genişlik,Yükseklik,X,Y şeklinde oluşturulmalıdır. 
+</Callout>
+
+`250,420,50,290`::`400,120,140,80`::`110,270,35,65`::`350,200,45,90`
+
+
+Bu ayarlar neticesinde 4 adet görsel, arzu ettiğimiz çözünürlüklerde ve konumlarda içeriğe entegre edilecektir.
+
+
+
+

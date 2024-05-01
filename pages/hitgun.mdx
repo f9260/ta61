@@ -1,0 +1,53 @@
+import Image from 'next/image'
+import factory from 'images/factory.png'
+import render from 'images/render.png'
+import wide from 'images/wide.png'
+import viral from 'images/viral.png'
+import { Card, Cards } from 'nextra-theme-docs'
+
+# Mod: Hit Gun
+
+<video autoPlay muted loop controls>
+  <source src="/hitgun.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+Hit Gun, VE3.Plus sisteminin en gelişmiş yapısıdır.
+
+Yatay videolardan dikeylere her türlü içerik türünün üretilmesini sağlar.
+
+**Fabrika**, **Viral**, **Geniş** ve **Render** adında dört temel özelliği bulunur.
+
+Bu özelliklerin tümü kendi içlerinde benzersiz alt özelliklere sahiptir.
+
+
+  <Cards  num={2}>
+              <Card title="Fabrika" image href="/hitgun/fabrika">
+                        <Image src={factory} />
+              </Card>
+
+               <Card title="Viral" image href="/hitgun/render">
+                     <Image src={viral} />
+
+              </Card>
+
+            </Cards>
+
+
+  <Cards  num={2}>
+
+              <Card title="Geniş" image href="/hitgun/genis">
+                        <Image src={wide} />
+
+              </Card>
+              <Card title="Render" image href="/hitgun/render">
+                        <Image src={render} />
+              </Card>
+
+            </Cards>
+
+
+
+
+
