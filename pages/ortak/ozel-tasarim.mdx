@@ -1,4 +1,77 @@
+import Image from 'next/image'
+import ozeltasarim from 'app-images/ozeltasarim.png'
+
+# Özel Tasarım
+
 <video autoPlay muted loop controls>
   <source src="/özeltasarım.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
+
+
+## Özel Video Ayarları
+
+Dikey videolarınız varsayılan olarak çerçevenin tamamını kaplar.
+
+Ancak özel tasarım seçeneği ile bu kuralı aşabilir ve videolarınızı dilediğiniz boyutlarda ekrana yerleştirebilirsiniz.
+
+### Ana Video Ayarları
+
+Ana videonuzu çerçevede dilediğiniz boyutlarda ve konumda göstermek için sırasıyla;
+
+**Genişlik,Yükseklik,X Koordinat ve Y Koordinat** değerlerini buradan  girebilirsiniz.
+
+Örnek : 500,750,0,225
+
+<Image src={ozeltasarim} />
+
+
+### Birleştirilecek Video Ayarları
+
+**Seçenekler > Video Birleştir** özelliği kullanıldığı zaman, birleştirilen videonun çözünürlük ve konumlarını özelleştirmek için bu seçenek kullanılabilir.
+
+Çalışma mantığı Ana Video Ayarları'nın aynısıdır.
+
+
+## Özel Arkaplan
+
+Çerçevenizin rengini veya tasarımını değiştirmek için bu alanı kullanabilirsiniz.
+
+
+### Arkaplan Türü
+
+
+Renk ve Görsel/Gif olmak üzere iki adet arkaplan türü seçeneği bulunur.
+
+
+#### Renk
+
+Renk seçeneği aktif edildiğinde 
+
+- Siyah
+- Beyaz
+- Kırmızı
+- Mavi
+- Yeşil
+- Sarı
+- Mor
+
+seçenekleri ve 
+
+- Özel Renk
+
+seçeneği ortaya çıkar.
+
+Dilerseniz hazır renkleri kullanabilir veya Özel Renk seçeneği ile arzu ettiğiniz 
+bir rengin HEX kodunu kullanarak arkaplan için farklı bir renk tercihi yapabilirsiniz.
+
+
+#### Görsel/Gif
+
+Arkaplanınıza sabit bir renk yerine bir görsel veya gif tanımlamak isterseniz bu alanı kullanabilirsiniz.
+
+
+Arkaplana tanımlamak istediğiniz dikey görseli/gifi bir klasöre ekledikten sonra bu seçenek üzerinden sisteme entegre edebilirsiniz.
+
+
+

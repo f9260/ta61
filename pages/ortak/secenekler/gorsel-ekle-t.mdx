@@ -1,5 +1,7 @@
 # Görsel Ekle(T)
 
+Transparan görseller eklemek istiyorsanız bu alanı kullanabilirsiniz.
+
 
 <video autoPlay muted loop controls>
   <source src="/gorsel-transparan.mp4" type="video/mp4" />
@@ -7,9 +9,80 @@
 </video>
 
 
+Çalışma mantığı Görsel Ekle seçeneği ile aynıdır. Transparan görseller ile normal görsellerin ayrı ayrı kullanılabilmesi için oluşturulmuştur.
 
-Transparan görseller ile normal görsellerin birbirinden ayrı tutulması ve daha rahat çalışma gerçekleştirilmesi adına oluşturulmuştur.
 
-Görsel Ekle özelliği ile aynı yapıya ve çalışma mantığına sahiptir.
+## Görseller(T)
 
-Detaylı kullanım bilgisi için tıklayınız.
+Bir klasör içerisine kullanmak istediğiniz transparan görselleri sırayla ekleyin ve Görseller(T) bölümünden klasörü sisteme tanımlayın.
+
+
+## Görsel Sayısı(T)
+
+İçeriklerinize en fazla 5 adet transparan görsel ekleyebilirsiniz. Bu görsellerin boyutlarını, konumlarını özelleştirebilir şeffaflık ayarları uygulayabilirsiniz.
+
+Kaç görsel kullanmak istediğinizi Görsel Sayısı(T) kısmından ayarlayabilrisiniz.
+
+
+
+## Görsel Ayarları(T)
+
+Eklenen görsellerin Genişlik, Yükseklik, X ve Y koordinat ayarları buradan yapılır.
+
+Eklediğiniz görsel sayısına göre her görselin ayarını " **::** " ifadesi ile oluşturabilirsiniz.
+
+### Örnek
+
+Çalışmalarımıza 4 adet görsel eklemek istediğimizi varsayalım.
+
+4 adet görseli bir klasör içerisine koyup sisteme tanımladık.
+
+Ardından Görsel Sayısı'nı 4 olarak belirledik.
+
+** -- buralara step falan yapılabilir -- **
+
+Görsellerimizin çözünürlüklerini ve hangi konumlarda yer almasını arzu ediyorsak konum bilgilerini girmemiz gerekir.
+
+-- görsellerle ifade edilecek --
+
+Örnek çözünürlükler ve konumlar oluşturalım.
+
+import { Callout } from 'nextra/components'
+ 
+<Callout type="info" emoji="ℹ️">
+  İşlem sırası : Genişlik,Yükseklik,X,Y şeklinde oluşturulmalıdır. 
+</Callout>
+
+`250,420,50,290`::`400,120,140,80`::`110,270,35,65`::`350,200,45,90`
+
+
+Bu ayarlar neticesinde 4 adet görsel, arzu ettiğimiz çözünürlüklerde ve konumlarda içeriğe entegre edilecektir.
+
+
+## Opaklık Ayarları(T)
+
+Görsellerinize şeffaflık ayarı vermek için bu seçeneği kullanabilirsiniz.
+
+1 ve 9 arasında değer verilebilir.
+
+9 değerine yaklaştıkça görsel daha belirgin hale gelir. Bu değerden uzaklaşıldıkça şeffaflık artar.
+
+Birden fazla görsel kullanıldığı durumlarda her görsel için " :: " parametresi ile ayrı değer girilebilir.
+
+### Örnek
+
+Üç adet görsel kullandınız ve üçü için de şeffaflık ayarı vermek istiyorsunuz.
+
+Bu durumda Opaklık Ayarları bölümüne örneğin **5** değeri yazılırsa, bu değer **tüm görseller için** uygulanır.
+
+Ancak **her biri için ayrı değerler** tanımlanmak isteniyorsa **5**::**2**::**7** şeklinde her görsel için ayrı değerler tanımlanabilir.
+
+
+## Süre Aralığı
+
+Süre Aralığı(Yatay) seçeneği aktif edildiği zaman kullanılabilir hale gelen özelliktir.
+
+**Hit Gun > Geniş modu**, yatay içerikler üretmeye imkan tanır. Bu içeriklerde, belli bir süre ekranda kalıp sonra kaybolmasını 
+istediğiniz görseller oluşturmak için bu özellik kullanılabilir.
+
+Örneğin Süre Aralığı kısmına **5-15** yazıldığı zaman, ilgili görsel videonun 5. saniyesinde ekrana gelir ve 15. saniyesine dek ekranda kaldıktan sonra kaybolur.

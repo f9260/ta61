@@ -4,6 +4,8 @@ import customses from 'images/customses.png'
 import sureler from 'images/sureler.png'
 import viralmod from 'images/viralmod.png'
 import { Card, Cards } from 'nextra-theme-docs'
+import { Callout } from 'nextra/components'
+
 
 
 # Viral
@@ -14,14 +16,23 @@ Dilediğiniz ses dosyası ile ilgi çekici içerikler üretmenize imkan tanır.
 
 Aynı zamanda video tanımlayarak benzer videolar üretebilirsiniz.
 
+
+
+
+<Callout type="info" emoji="ℹ️">
+ Viral aktifken diğer özellikler şu anda devre dışıdır. 
+</Callout>
+ 
+
+
   <Cards num={2}>
 
-             <Card title="Viral Mod" image href="/hitgun/fabrika/metot">
+             <Card title="Viral Mod" image href="/hitgun/viral/viralmod">
                         <Image src={viralmod} /> 
              
               </Card>
 
-            <Card title="Sesler" image href="/hitgun/fabrika/alan">
+            <Card title="Sesler" image href="/hitgun/viral/sesler">
                         <Image src={sesler} />
               </Card>
 
@@ -29,16 +40,14 @@ Aynı zamanda video tanımlayarak benzer videolar üretebilirsiniz.
 
   <Cards num={2}>
 
-             <Card title="Süreler" image href="/hitgun/fabrika/metot">
+             <Card title="Süreler" image href="/hitgun/viral/sureler">
                         <Image src={sureler} /> 
              
               </Card>
 
-            <Card title="Özel Ses" image href="/hitgun/fabrika/alan">
+            <Card title="Özel Ses" image href="/hitgun/viral/ozelses">
                         <Image src={customses} />
               </Card>
 
             </Cards>    
 
-
-Detaylar için **Viral Mod**, **Sesler**, **Süreler**  ve **Özel Ses** sayfalarını inceleyebilirsinniz.
