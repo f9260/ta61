@@ -4,6 +4,9 @@ const withNextra = require('nextra')({
 })
 
 module.exports = withNextra({
-  basePath: '/tr/rehber',
+  output: 'export',
+  images: {
+    unoptimized:true
+  }
 }
 )

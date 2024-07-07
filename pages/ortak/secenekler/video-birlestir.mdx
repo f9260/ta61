@@ -4,13 +4,37 @@ Video Birleştir seçeneği etkinleştirildiğinde, üretilmek istenen içerikle
 
 Hit Gun sisteminde yer alan Eşitle özelliğine benzer bir yapıdadır.
 
-**Süre Ayarı, Ana Video Konumu, Ana Video Oranı, Birleştirilen Video Opaklığı** ve **Birleştirilen Video Sesi** olmak üzere 5 ayarı bulunur.
-
 
 <video autoPlay muted loop controls>
-  <source src="/videobirlestir.mp4" type="video/mp4" />
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce/video-birlestir.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
+
+import Link from 'next/link';
+
+<Link href={`/ortak/secenekler/video-birlestir#-video-e%C4%9Fitim`}>
+  <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+    <div className="responsive-table__item">
+      <button
+        className="responsive-table__button button button--secondary"
+        style={{
+          width: '100%',  // Genişliği %100 olarak ayarlandı
+          marginTop: 14,
+          padding: 12,
+          backgroundColor: '#00AAFF',
+          borderRadius: 8,
+          color: '#fff',
+          fontSize: '1.1rem',
+          textDecoration: 'none',
+          cursor: 'pointer',
+          userSelect: 'none'
+        }}
+      >
+        Video Eğitime Git  
+      </button>
+    </div>
+  </div>
+</Link>
 
 ## Birleştirilecek Video
 
@@ -33,8 +57,6 @@ Doğrudan içeriğin birleştirilmesi adına 10. saniyesinden itibaren birleşti
 Birleştirme işlemini, birleştirilen videonun rastgele bir süresinden başlatır.
 
 Örneğin 40 dakikalık bir videoyu birleştirilen video olarak kullanmayı tercih ettiğinizde, çalışma yapılan her video için birleştirilen videonun farklı sürelerinden başlanır.
-
--- buralara video anlatım --
 
 ### Özel Süre
 
@@ -66,10 +88,19 @@ Varsayılan olarak %70'tir.
 
 Birleştirilen videonun opaklık ayarı burada yapılır. Videonuzun şeffaflaşmasını istiyorsanız bu ayarı etkinleştirip opaklık ayarı yapabilirsiniz.
 
--- bilgiler --
+Girilen sayı arttıkça netlik artar, azaldıkça şeffaflık artar.
 
 ## Birleştirilen Video Sesi
 
 Oluşturulan videolarda varsayılan olarak ana video sesi yer alır.
 
 Eğer birleştirdiğiniz videonun sesini kullanmak istiyorsanız bu ayarı etkinleştirebilirsiniz.
+
+
+## 📺 Video Eğitim
+    
+
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/secenekler-video-birlestir.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>

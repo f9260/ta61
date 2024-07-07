@@ -1,14 +1,40 @@
 # Geçiş
 
-Bir klip üretirken, kullanılan videolar arasına geçişler eklemek isteyebilirsiniz.
+Bir klip üretirken, kullanılan videoların arasına geçişler eklemek isteyebilirsiniz.
 
 Geçiş  özelliği, bu ihtiyacınızı karşılayacaktır.
 
 İşaretlendiği takdirde;
 
-**Geçiş Türü** - **Baştan Başla** - **Geçişler**
+**Geçiş Türü** - **Baştan** - **Geçişler**
 
 şeklinde 3 seçenek oluşur.
+
+import Link from 'next/link';
+
+<Link href={`/hitgun/genis/klip/gecis#-video-e%C4%9Fitim`}>
+  <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+    <div className="responsive-table__item">
+      <button
+        className="responsive-table__button button button--secondary"
+        style={{
+          width: '100%',  // Genişliği %100 olarak ayarlandı
+          marginTop: 14,
+          padding: 12,
+          backgroundColor: '#00AAFF',
+          borderRadius: 8,
+          color: '#fff',
+          fontSize: '1.1rem',
+          textDecoration: 'none',
+          cursor: 'pointer',
+          userSelect: 'none'
+        }}
+      >
+        Video Eğitime Git  
+      </button>
+    </div>
+  </div>
+</Link>
 
 
 ## Geçiş Türü
@@ -26,15 +52,25 @@ Sıralı geçişte, hazırladığınız geçiş videoları bir sıra halinde iç
 Rastgele geçişte ise geçişleriniz tümüyle rastgele seçilerek videolar arasına eklenir.
 
 
-## Baştan Başla
+## Baştan
 
 Geçişler, varsayılan olarak videolar arasına eklenir.
 
 Ancak bazı durumlarda, geçişinizi videonun önüne eklemek isteyebilirsiniz.
 
-Bu tür anlarda " Baştan Başla " seçeneğini işaretleyerek, videonuzu önce geçiş içeriğinizle başlatabilirsiniz.
+Bu tür anlarda " Baştan " seçeneğini işaretleyerek, videonuzu önce geçiş içeriğinizle başlatabilirsiniz.
 
 
 ## Geçişler
 
 Geçişlerinizin yer aldığı videoyu sisteme tanımlayacağınız alandır.
+
+
+## 📺 Video Eğitim
+    
+
+
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/yatay-gecis.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>

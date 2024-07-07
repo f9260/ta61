@@ -6,3 +6,107 @@ Fade özelliği, videolarınızın başına ve sonuna solma efekti eklemenizi sa
 
 Video sonu için 3 saniye ayarı yapıldığında ise videonun bitimine 3 saniye kala görüntü yavaş yavaş kararmaya başlar.
 
+import Link from 'next/link';
+
+<Link href={`/hitgun/genis/fade#-video-e%C4%9Fitim`}>
+  <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+    <div className="responsive-table__item">
+      <button
+        className="responsive-table__button button button--secondary"
+        style={{
+          width: '100%',  // Genişliği %100 olarak ayarlandı
+          marginTop: 14,
+          padding: 12,
+          backgroundColor: '#00AAFF',
+          borderRadius: 8,
+          color: '#fff',
+          fontSize: '1.1rem',
+          textDecoration: 'none',
+          cursor: 'pointer',
+          userSelect: 'none'
+        }}
+      >
+        Video Eğitime Git  
+      </button>
+    </div>
+  </div>
+</Link>
+
+## Fade Ayarları
+
+Fade ayarları " - " sembolü ile yapılır.
+
+En az 2 adet değer girilmesi gerekmektedir.
+
+0 değeri, işlem gerçekleşmemesini sağlar.
+
+Örneğin yalnızca `video başlangıcı` için 4 saniyelik bir fade ayarı yapmak istiyorsanız;
+
+**4-0**
+
+değeri girilmelidir.
+
+Sadece `video sonuna` 3 saniyelik bir fade ayarı eklenmek isteniyorsa;
+
+**0-3**
+
+değeri girilmelidir.
+
+`Hem video başı hem sonuna` fade ayarı yapılmak isteniyorsa;
+
+**4-3**
+
+gibi arzu ettiğiniz değerleri girebilirsiniz.
+
+
+
+### Intro/Outro Fade
+
+Intro ve Outro için de fade ayarları uygulanabilir. 
+
+#### Intro Fade
+
+
+Sadece Intro için fade ayarı yapmak istediğinizde, `intronuzun bitiş anına` fade ayarı uygulanır.
+
+Örneğin 3 saniyelik bir fade ayarı yapmak istiyorsanız;
+
+**4-3-3**
+
+değeri girmeniz yeterlidir. Yani en sondaki değer, intro fade değerinizi belirler.
+
+
+
+#### Outro Fade
+
+
+Outro'nuz için fade ayarı uyguladığınızda, `outro'nun başlangıcına` fade ayarı yapılır.
+
+**4-3-3-4**
+
+şeklinde bir ayar yaptığınızda en sonda yer alan 4 ifadesi, outronuzun ilk 4 saniyesine fade özelliği uygulanmasını sağlar.
+
+
+Fade özelliği uygulamak istemediğiniz anlara 0 değeri eklemelisiniz.
+
+Örneğin `yalnızca Outro için` fade ayarı yapmak istiyorsanız;
+
+
+**0-0-0-4**
+
+şeklinde bir değer girmelisiniz.
+
+
+**3-2-0-2**
+
+şeklinde girilen bir değerde ise videonuzun başlangıcına ve bitişine fade ayarı uygulanırken intro'ya uygulanmaz. Ardından Outro için 2 saniyelik fade ayarı uygulanır.
+
+
+## 📺 Video Eğitim
+
+    
+
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/yatay-fade.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>

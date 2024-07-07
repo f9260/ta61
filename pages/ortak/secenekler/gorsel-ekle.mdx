@@ -2,6 +2,37 @@
 
 Videolarınıza görsel ekleyebileceğiniz seçenektir.
 
+<video autoPlay muted loop controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce/gorsel-ekle.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+import Link from 'next/link';
+
+<Link href={`/ortak/secenekler/gorsel-ekle#video-e%C4%9Fitim`}>
+  <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+    <div className="responsive-table__item">
+      <button
+        className="responsive-table__button button button--secondary"
+        style={{
+          width: '100%',  // Genişliği %100 olarak ayarlandı
+          marginTop: 14,
+          padding: 12,
+          backgroundColor: '#00AAFF',
+          borderRadius: 8,
+          color: '#fff',
+          fontSize: '1.1rem',
+          textDecoration: 'none',
+          cursor: 'pointer',
+          userSelect: 'none'
+        }}
+      >
+        Video Eğitime Git  
+      </button>
+    </div>
+  </div>
+</Link>
+
 
 ## Görseller
 
@@ -15,10 +46,6 @@ Kaç görsel kullanmak istediğinizi Görsel Sayısı kısmından ayarlayabilris
 
 
 
-<video autoPlay muted loop controls>
-  <source src="/gorselekle.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
 
 
 
@@ -36,11 +63,7 @@ Eklediğiniz görsel sayısına göre her görselin ayarını " **::** " ifadesi
 
 Ardından Görsel Sayısı'nı 4 olarak belirledik.
 
-** -- buralara step falan yapılabilir -- **
-
 Görsellerimizin çözünürlüklerini ve hangi konumlarda yer almasını arzu ediyorsak konum bilgilerini girmemiz gerekir.
-
--- görsellerle ifade edilecek --
 
 Örnek çözünürlükler ve konumlar oluşturalım.
 
@@ -56,7 +79,7 @@ import { Callout } from 'nextra/components'
 Bu ayarlar neticesinde 4 adet görsel, arzu ettiğimiz çözünürlüklerde ve konumlarda içeriğe entegre edilecektir.
 
 
-## Opacity Ayarları
+## Opaklık Ayarları
 
 Görsellerinize şeffaflık ayarı vermek için bu seçeneği kullanabilirsiniz.
 
@@ -70,8 +93,15 @@ Birden fazla görsel kullanıldığı durumlarda her görsel için " :: " parame
 
 Üç adet görsel kullandınız ve üçü için de şeffaflık ayarı vermek istiyorsunuz.
 
-Bu durumda Opacity Ayarları bölümüne örneğin **5** değeri yazılırsa, bu değer **tüm görseller için** uygulanır.
+Bu durumda Opaklık Ayarları bölümüne örneğin **5** değeri yazılırsa, bu değer **tüm görseller için** uygulanır.
 
 Ancak **her biri için ayrı değerler** tanımlanmak isteniyorsa **5**::**2**::**7** şeklinde her görsel için ayrı değerler tanımlanabilir.
 
 
+## 📺 Video Eğitim
+    
+
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/secenekler-gorsel-ekle.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>

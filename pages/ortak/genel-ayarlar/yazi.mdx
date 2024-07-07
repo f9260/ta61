@@ -1,7 +1,7 @@
 # Yazı
 
 <video autoPlay muted loop controls>
-  <source src="/yazı.mp4" type="video/mp4" />
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce/yazi.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
 
@@ -18,6 +18,32 @@ import { Callout } from 'nextra/components'
 <Callout emoji="💡">
   Eklemek istediğiniz yazıların görseller kullanılarak videolara eklenmesi işlemlerinizi kolaylaştırabilir.
 </Callout>
+
+import Link from 'next/link';
+
+<Link href={`/ortak/genel-ayarlar/yazi#yaz%C4%B1-video-e%C4%9Fitim`}>
+  <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+    <div className="responsive-table__item">
+      <button
+        className="responsive-table__button button button--secondary"
+        style={{
+          width: '100%',  // Genişliği %100 olarak ayarlandı
+          marginTop: 14,
+          padding: 12,
+          backgroundColor: '#00AAFF',
+          borderRadius: 8,
+          color: '#fff',
+          fontSize: '1.1rem',
+          textDecoration: 'none',
+          cursor: 'pointer',
+          userSelect: 'none'
+        }}
+      >
+        Video Eğitime Git  
+      </button>
+    </div>
+  </div>
+</Link>
 
 
 ## Yazı Ekle
@@ -37,12 +63,12 @@ Bu yazılara dair yazı boyutu, yazı rengi gibi detaylara girmek istediğiniz z
 
 ## Yazı Boyutu
 
-Eklediğiniz yazıların boyutlarını belirlediğiniz alandır. Her yazı için farklı boyutlar belirleyebilirsiniz. 
+Eklediğiniz yazıların boyutlarını belirlediğiniz alandır. 
 
 
 ## Yazı Rengi
 
-Yazılarınızın renk ayarlarını yapabileceğiniz kısımdır. Her yazı için ayrı renkler belirleyebilirsiniz.
+Yazılarınızın renk ayarlarını yapabileceğiniz kısımdır. 
 
 
 ## Yazı Koordinatları
@@ -58,3 +84,14 @@ Yazılarınıza özel fontlar vermek istiyorsanız burayı kullanabilirsiniz. Bi
 ## Yazı Opaklığı
 
 Yazıların şeffaflık ayarı burada yapılır. Değer azaldıkça şeffaflık artar.
+
+
+
+## 📺 Video Eğitim
+
+    
+
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/ayarlar-yazi.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>

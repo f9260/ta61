@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import tamekran2 from 'images/tamekran2.gif'
 import tamekran from 'images/tamekran.gif'
+import Link from 'next/link'
 
 # Tam Ekran
 
@@ -14,10 +15,17 @@ Tam ekran işaretli değilken videoların orta alanından içerik üretimi gerç
 
 
 
-Tam ekran seçeneği işaretlendiğinde ise seçilen videolar yatay hale getilirek videonun tamamı kullanılır.
+Tam ekran seçeneği işaretlendiğinde ise seçilen videolar yatay hale getirilerek videonun tamamı kullanılır.
 
 
-<Image src={tamekran} />
+<Image src={tamekran} width={430} height={800} />
 
 
 
+## 📺 Video Eğitim
+    
+
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/viral-tam-ekran.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>

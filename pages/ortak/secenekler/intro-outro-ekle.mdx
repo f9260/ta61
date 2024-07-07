@@ -2,7 +2,7 @@
 
 
 <video autoPlay muted loop controls>
-  <source src="/introoutro.mp4" type="video/mp4" />
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce/introoutro.mp4" type="video/mp4" />
   Your browser does not support the video tag.
 </video>
 
@@ -11,6 +11,32 @@
 **Dikey videolara** **intro** ve **outro** eklemek için bu özellik kullanılabilir.
 
 Yalnızca görsel ve gif kullanımı etkindir.
+
+import Link from 'next/link';
+
+<Link href={`/ortak/secenekler/intro-outro-ekle#video-e%C4%9Fitim`}>
+  <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+    <div className="responsive-table__item">
+      <button
+        className="responsive-table__button button button--secondary"
+        style={{
+          width: '100%',  // Genişliği %100 olarak ayarlandı
+          marginTop: 14,
+          padding: 12,
+          backgroundColor: '#00AAFF',
+          borderRadius: 8,
+          color: '#fff',
+          fontSize: '1.1rem',
+          textDecoration: 'none',
+          cursor: 'pointer',
+          userSelect: 'none'
+        }}
+      >
+        Video Eğitime Git  
+      </button>
+    </div>
+  </div>
+</Link>
 
 ## Intro Ekle
 
@@ -36,10 +62,19 @@ Dikey videolarınıza **Outro** eklemek için bu özelliği aktif etmeniz yeterl
 
 ## Outro Süresi
 
-Eklediğiniz görsel veya gif'in giriş anında ekranda kaç saniye görüntülenmesini istediğinizi buradan belirleyebilirsiniz. 
+Eklediğiniz görsel veya gif'in video sonunda ekranda kaç saniye görüntülenmesini istediğinizi buradan belirleyebilirsiniz. 
 
 En yüksek değer 10 saniyedir.
 
 ## Outro Dosyası
 
 Outro dosyanızı(görsel veya gif) bir klasöre ekledikten sonra **Outro Dosyası** seçeneği üzerinden klasörünüzü sisteme tanımlayabilirsiniz. 
+
+
+## 📺 Video Eğitim
+    
+
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/secenekler-introoutro.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>

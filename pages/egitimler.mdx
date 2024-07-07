@@ -1,0 +1,1995 @@
+import Image from 'next/image'
+import tutorial from 'images/tutorial.png'
+import talent from 'images/talent.png'
+import { Card, Cards } from 'nextra-theme-docs'
+import Link from 'next/link';
+  import { Callout } from 'nextra/components'
+
+# Eğitimler
+
+VE3.Plus'ın kullanımına dair eğitim içerikleri [Forum](https://forum.ve3.plus/)'umuzda paylaşılmaktadır.
+
+Arzu ederseniz [Talent Scout](https://forum.ve3.plus/t/talent-scout?language=tr) kategorisi üzerinden kendi eğitimlerinizi de diğer kullanıcılarla paylaşarak topluluğumuza katkı sağlayabilirsiniz.
+
+
+
+  <Cards num={2}>
+              <Card title="VE3.Plus Eğitimleri" image href="https://forum.ve3.plus/t/tutorials?language=tr" target="_blank">
+                        <Image src={tutorial} />
+              </Card>
+              <Card title="Talent Scout" image href="https://forum.ve3.plus/t/talent-scout?language=tr">
+                        <Image src={talent} />
+              </Card>
+             
+            </Cards>
+
+*Not*: Eğitimler **DELL G3-3579 Laptop** ile oluşturulmuştur.
+
+**İşlemci:** `Intel(R) Core( TM) i7-8750H CPU @ 2.20GHz`, **Ram:** `16 GB`, **GPU:** `NVIDIA GeForce 1060 with Max- Q Design / Intel UHD Graphics 630` ve  `256 GB` **SSD**.
+
+
+
+import { Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon, Box } from "@chakra-ui/react";
+
+
+## 📺 Eğitim Listesi (Hızlı Erişim)
+
+      
+        
+
+<Accordion allowToggle>
+  <AccordionItem >
+    <h2>
+      <AccordionButton _expanded={{ bg: '#C7B06C', color: 'white' }}>
+        <Box as="span" flex="1" textAlign="center">
+          **Hit Gun**
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={20}>
+      <Accordion allowToggle>
+        <AccordionItem>
+          <h2>
+            <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+              <Box as="span" flex="1" textAlign="left">
+                  `Fabrika`
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h2>
+          <AccordionPanel pb={15}>
+            <Accordion allowToggle>
+              <AccordionItem>
+                <h2>
+                  <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                    <Box as="span" flex="1" textAlign="left">
+                            `Metot`
+                    </Box>
+                    <AccordionIcon />
+                  </AccordionButton>
+                </h2>
+                                <AccordionPanel pb={4}>
+                                  <AccordionPanel pb={4}>
+                                    <Accordion allowToggle>
+                                      <AccordionItem>
+                                        <h2>
+                                          <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                                            <Box as="span" flex="1" textAlign="left">
+                                                   `Rastgele`
+                                            </Box>
+                                            <AccordionIcon />
+                                          </AccordionButton>
+                                        </h2>
+                                        <AccordionPanel pt={17}>
+                                  
+
+    
+
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/fabrika-rastgele.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+<Link href="/hitgun/fabrika/metot/rastgele" legacyBehavior>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none' }}
+  >
+    <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+      <div className="responsive-table__item">
+        <button
+          className="responsive-table__button button button--secondary"
+          style={{
+            width: '100%', // Genişliği %100 olarak ayarlandı
+            marginTop: 14,
+            marginBottom: 23,
+            marginBottom: 23,
+            padding: 12,
+            backgroundColor: '#4FA834',
+            borderRadius: 8,
+            color: '#fff',
+            fontSize: '1.1rem',
+            cursor: 'pointer',
+            userSelect: 'none'
+          }}
+        >
+          Konuya Git
+        </button>
+      </div>
+    </div>
+  </a>
+</Link>
+
+                                        </AccordionPanel>
+                                      </AccordionItem>
+                                                  <AccordionItem >
+                                <h2>
+                                  <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                                    <Box as="span" flex="1" textAlign="left">
+                                                `Dakika`
+                                    </Box>
+                                    <AccordionIcon />
+                                  </AccordionButton>
+                                </h2>
+                                <AccordionPanel pt={17}>
+    
+<span style={{ fontWeight: 'bold', fontSize: '24px' }}>
+  ▶️ Süre 
+</span>
+                           
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/fabrika-dakika-sure.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+    
+<span style={{ fontWeight: 'bold', fontSize: '24px' }}>
+▶️ Bölüm 
+</span>
+                              
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/fabrika-dakika-bolum.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+<Link href="/hitgun/fabrika/metot/dakika" legacyBehavior>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none' }}
+  >
+    <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+      <div className="responsive-table__item">
+        <button
+          className="responsive-table__button button button--secondary"
+          style={{
+            width: '100%', // Genişliği %100 olarak ayarlandı
+            marginTop: 14,
+            marginBottom: 23,
+            padding: 12,
+            backgroundColor: '#4FA834',
+            borderRadius: 8,
+            color: '#fff',
+            fontSize: '1.1rem',
+            cursor: 'pointer',
+            userSelect: 'none'
+          }}
+        >
+          Konuya Git
+        </button>
+      </div>
+    </div>
+  </a>
+</Link>
+                                </AccordionPanel>
+                              </AccordionItem>
+                                          <AccordionItem>
+                                <h2>
+                                  <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                                    <Box as="span" flex="1" textAlign="left">
+                                                `Aralık`
+                                    </Box>
+                                    <AccordionIcon />
+                                  </AccordionButton>
+                                </h2>
+                                <AccordionPanel pt={17}>
+
+    
+<span style={{ fontWeight: 'bold', fontSize: '24px' }}>
+▶️ Rastgele 
+</span>
+                                 
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/fabrika-aralik-rastgele.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+         
+     
+<span style={{ fontWeight: 'bold', fontSize: '24px' }}>
+▶️ Sıralı  
+</span>
+    
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/fabrika-aralik-sirali.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+<Link href="/hitgun/fabrika/metot/aralik" legacyBehavior>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none' }}
+  >
+    <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+      <div className="responsive-table__item">
+        <button
+          className="responsive-table__button button button--secondary"
+          style={{
+            width: '100%', // Genişliği %100 olarak ayarlandı
+            marginTop: 14,
+            marginBottom: 23,
+            padding: 12,
+            backgroundColor: '#4FA834',
+            borderRadius: 8,
+            color: '#fff',
+            fontSize: '1.1rem',
+            cursor: 'pointer',
+            userSelect: 'none'
+          }}
+        >
+          Konuya Git
+        </button>
+      </div>
+    </div>
+  </a>
+</Link>
+
+
+                                </AccordionPanel>
+                              </AccordionItem>
+                                    </Accordion>
+                                  </AccordionPanel>
+                                </AccordionPanel>
+                              </AccordionItem>
+              <AccordionItem>
+                <h2>
+                  <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                    <Box as="span" flex="1" textAlign="left">
+                            `Alan`
+                    </Box>
+                    <AccordionIcon />
+                  </AccordionButton>
+                </h2>
+                                                <AccordionPanel pb={4}>
+                                  <AccordionPanel pb={4}>
+                                    <Accordion allowToggle>
+                                      <AccordionItem>
+                                        <h2>
+                                          <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                                            <Box as="span" flex="1" textAlign="left">
+                                                   `Varsayılan`
+                                            </Box>
+                                            <AccordionIcon />
+                                          </AccordionButton>
+                                        </h2>
+                                        <AccordionPanel pt={17}>
+                                
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/fabrika-alan-varsayilan.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+<Link href="/hitgun/fabrika/alan/varsayilan" legacyBehavior>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none' }}
+  >
+    <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+      <div className="responsive-table__item">
+        <button
+          className="responsive-table__button button button--secondary"
+          style={{
+            width: '100%', // Genişliği %100 olarak ayarlandı
+            marginTop: 14,
+            marginBottom: 23,
+            padding: 12,
+            backgroundColor: '#4FA834',
+            borderRadius: 8,
+            color: '#fff',
+            fontSize: '1.1rem',
+            cursor: 'pointer',
+            userSelect: 'none'
+          }}
+        >
+          Konuya Git
+        </button>
+      </div>
+    </div>
+  </a>
+</Link>
+                                        </AccordionPanel>
+                                      </AccordionItem>
+                                                  <AccordionItem>
+                                <h2>
+                                  <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                                    <Box as="span" flex="1" textAlign="left">
+                                                `Özel`
+                                    </Box>
+                                    <AccordionIcon />
+                                  </AccordionButton>
+                                </h2>
+                                <AccordionPanel pt={17}>
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/fabrika-alan-ozel.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+<Link href="/hitgun/fabrika/alan/ozel" legacyBehavior>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none' }}
+  >
+    <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+      <div className="responsive-table__item">
+        <button
+          className="responsive-table__button button button--secondary"
+          style={{
+            width: '100%', // Genişliği %100 olarak ayarlandı
+            marginTop: 14,
+            marginBottom: 23,
+            padding: 12,
+            backgroundColor: '#4FA834',
+            borderRadius: 8,
+            color: '#fff',
+            fontSize: '1.1rem',
+            cursor: 'pointer',
+            userSelect: 'none'
+          }}
+        >
+          Konuya Git
+        </button>
+      </div>
+    </div>
+  </a>
+</Link>
+                                </AccordionPanel>
+                              </AccordionItem>
+                                          <AccordionItem>
+                                <h2>
+                                  <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                                    <Box as="span" flex="1" textAlign="left">
+                                                `Gelişmiş`
+                                    </Box>
+                                    <AccordionIcon />
+                                  </AccordionButton>
+                                </h2>
+                                <AccordionPanel pt={17}>
+    
+<span style={{ fontWeight: 'bold', fontSize: '24px' }}>
+▶️ Gelişmiş Alan Tipi: Piksel
+
+</span>
+    
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/fabrika-alan-gelismis-pixel.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+    
+<span style={{ fontWeight: 'bold', fontSize: '24px' }}>
+▶️ Gelişmiş Alan Tipi: Yüzde
+
+</span>
+    
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/fabrika-alan-yuzde.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+<Link href="/hitgun/fabrika/alan/gelismis" legacyBehavior>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none' }}
+  >
+    <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+      <div className="responsive-table__item">
+        <button
+          className="responsive-table__button button button--secondary"
+          style={{
+            width: '100%', // Genişliği %100 olarak ayarlandı
+            marginTop: 14,
+            marginBottom: 23,
+            padding: 12,
+            backgroundColor: '#4FA834',
+            borderRadius: 8,
+            color: '#fff',
+            fontSize: '1.1rem',
+            cursor: 'pointer',
+            userSelect: 'none'
+          }}
+        >
+          Konuya Git
+        </button>
+      </div>
+    </div>
+  </a>
+</Link>
+                                </AccordionPanel>
+                              </AccordionItem>
+                                    </Accordion>
+                                  </AccordionPanel>
+                                </AccordionPanel>
+                              </AccordionItem>
+                           <AccordionItem>
+                <h2>
+                  <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                    <Box as="span" flex="1" textAlign="left">
+                            `Eşitle`
+                    </Box>
+                    <AccordionIcon />
+                  </AccordionButton>
+                </h2>
+                <AccordionPanel pt={17}>
+    
+<span style={{ fontWeight: 'bold', fontSize: '24px' }}>
+▶️ Eşitle
+
+</span>
+    
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/fabrika-alan-esitle.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+    
+<span style={{ fontWeight: 'bold', fontSize: '24px' }}>
+▶️ Birleşen Özel Alan Tipi: Piksel
+
+</span>
+    
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/fabrika-alan-esitle-gelismis-pixel.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+    
+<span style={{ fontWeight: 'bold', fontSize: '24px' }}>
+▶️ Birleşen Özel Alan Tipi: Yüzde
+
+</span>
+    
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/fabrika-alan-esitle-gelismis-yuzde.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+
+<Link href="/hitgun/fabrika/esitle" legacyBehavior>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none' }}
+  >
+    <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+      <div className="responsive-table__item">
+        <button
+          className="responsive-table__button button button--secondary"
+          style={{
+            width: '100%', // Genişliği %100 olarak ayarlandı
+            marginTop: 14,
+            marginBottom: 23,
+            padding: 12,
+            backgroundColor: '#4FA834',
+            borderRadius: 8,
+            color: '#fff',
+            fontSize: '1.1rem',
+            cursor: 'pointer',
+            userSelect: 'none'
+          }}
+        >
+          Konuya Git
+        </button>
+      </div>
+    </div>
+  </a>
+</Link>
+                </AccordionPanel>
+              </AccordionItem>
+            </Accordion>
+          </AccordionPanel>
+
+        </AccordionItem>
+        <AccordionItem>
+          <h2>
+            <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+              <Box as="span" flex="1" textAlign="left">
+               `Viral`
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h2>
+          <AccordionPanel pt={-10}>
+                        <AccordionPanel pb={15}> 
+ 
+<Callout type="info" emoji="ℹ️">
+  Belirlenen süreler dışında kalan görüntü geçişleri, kullanılan videoların gerçek görüntülerinden kaynaklıdır.
+</Callout>
+   </AccordionPanel>
+                <AccordionPanel pb={4}>
+              <Accordion allowToggle>
+                <AccordionItem>
+                  <h2>
+                    <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                      <Box as="span" flex="1" textAlign="left">
+                               `Modlar`
+                      </Box>
+                      <AccordionIcon />
+                    </AccordionButton>
+                  </h2>
+                  <AccordionPanel pt={17}>
+    
+                  <span style={{ fontWeight: 'bold', fontSize: '24px' }}>
+                  ▶️ Sabit
+
+                  </span>
+    
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/viral-sabit.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+    
+<span style={{ fontWeight: 'bold', fontSize: '24px' }}>
+▶️ Rastgele
+
+</span>
+    
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/viral-rastgele.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+<Link href="/hitgun/viral/viralmod" legacyBehavior>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none' }}
+  >
+    <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+      <div className="responsive-table__item">
+        <button
+          className="responsive-table__button button button--secondary"
+          style={{
+            width: '100%', // Genişliği %100 olarak ayarlandı
+            marginTop: 14,
+            marginBottom: 23,
+            padding: 12,
+            backgroundColor: '#4FA834',
+            borderRadius: 8,
+            color: '#fff',
+            fontSize: '1.1rem',
+            cursor: 'pointer',
+            userSelect: 'none'
+          }}
+        >
+          Konuya Git
+        </button>
+      </div>
+    </div>
+  </a>
+</Link>
+                  </AccordionPanel>
+                </AccordionItem>
+                {/* Dakika */}
+                <AccordionItem>
+                  <h2>
+                    <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                      <Box as="span" flex="1" textAlign="left">
+                               `Sesler`
+                      </Box>
+                      <AccordionIcon />
+                    </AccordionButton>
+                  </h2>
+                  <AccordionPanel pt={17}>
+                    <video controls>
+                      <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/viral-sesler.mp4" type="video/mp4"fabrika-rastgel />
+                      Your browser does not support the video tag.
+                    </video>
+                    <Link href="/hitgun/viral/sesler" legacyBehavior>
+                      <a
+                         target="_blank"
+                         rel="noopener noreferrer"
+                         style={{ textDecoration: 'none' }}
+                         >
+                        <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+                          <div className="responsive-table__item">
+                            <button
+                                    className="responsive-table__button button button--secondary"
+                                    style={{
+                                    width: '100%', // Genişliği %100 olarak ayarlandı
+                                    marginTop: 14,
+                                    marginBottom: 23,
+                                    padding: 12,
+                                    backgroundColor: '#4FA834',
+                                    borderRadius: 8,
+                                    color: '#fff',
+                                    fontSize: '1.1rem',
+                                    cursor: 'pointer',
+                                    userSelect: 'none'
+                                    }}
+                                    >
+                              Konuya Git
+                            </button>
+                          </div>
+                        </div>
+                      </a>
+                    </Link>
+                  </AccordionPanel>
+                </AccordionItem>
+                {/* Aralık */}
+                <AccordionItem>
+                  <h2>
+                    <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                      <Box as="span" flex="1" textAlign="left">
+                               `Özel Ses`
+                      </Box>
+                      <AccordionIcon />
+                    </AccordionButton>
+                  </h2>
+                  <AccordionPanel pt={17}>
+    
+                  <span style={{ fontWeight: 'bold', fontSize: '24px' }}>
+                    ▶️ Web
+
+                    </span>
+    
+                    <video controls>
+                      <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/viral-ozelses-web.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+    
+                     <span style={{ fontWeight: 'bold', fontSize: '24px' }}>
+                    ▶️ Video
+
+                    </span>
+    
+                    <video controls>
+                      <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/viral-ozelses-video.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                    <Link href="/hitgun/viral/ozelses" legacyBehavior>
+                      <a
+                         target="_blank"
+                         rel="noopener noreferrer"
+                         style={{ textDecoration: 'none' }}
+                         >
+                        <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+                          <div className="responsive-table__item">
+                            <button
+                                    className="responsive-table__button button button--secondary"
+                                    style={{
+                                    width: '100%', // Genişliği %100 olarak ayarlandı
+                                    marginTop: 14,
+                                    marginBottom: 23,
+                                    padding: 12,
+                                    backgroundColor: '#4FA834',
+                                    borderRadius: 8,
+                                    color: '#fff',
+                                    fontSize: '1.1rem',
+                                    cursor: 'pointer',
+                                    userSelect: 'none'
+                                    }}
+                                    >
+                              Konuya Git
+                            </button>
+                          </div>
+                        </div>
+                      </a>
+                    </Link>
+                  </AccordionPanel>
+                </AccordionItem>
+                <AccordionItem>
+                  <h2>
+                    <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                      <Box as="span" flex="1" textAlign="left">
+                               `Tam Ekran`
+                      </Box>
+                      <AccordionIcon />
+                    </AccordionButton>
+                  </h2>
+                  <AccordionPanel pt={17}>
+                    <video controls>
+                      <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/viral-tam-ekran.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                    <Link href="/hitgun/viral/tamekran" legacyBehavior>
+                      <a
+                         target="_blank"
+                         rel="noopener noreferrer"
+                         style={{ textDecoration: 'none' }}
+                         >
+                        <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+                          <div className="responsive-table__item">
+                            <button
+                                    className="responsive-table__button button button--secondary"
+                                    style={{
+                                    width: '100%', // Genişliği %100 olarak ayarlandı
+                                    marginTop: 14,
+                                    marginBottom: 23,
+                                    padding: 12,
+                                    backgroundColor: '#4FA834',
+                                    borderRadius: 8,
+                                    color: '#fff',
+                                    fontSize: '1.1rem',
+                                    cursor: 'pointer',
+                                    userSelect: 'none'
+                                    }}
+                                    >
+                              Konuya Git
+                            </button>
+                          </div>
+                        </div>
+                      </a>
+                    </Link>
+                  </AccordionPanel>
+                </AccordionItem>
+                
+              </Accordion>
+            </AccordionPanel>
+          </AccordionPanel>
+        </AccordionItem>
+        <AccordionItem>
+          <h2>
+            <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+              <Box as="span" flex="1" textAlign="left">
+               `Geniş`
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h2>
+          				<AccordionPanel pt={17}>
+           <video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/yatay.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+
+<Link href="/hitgun/genis" legacyBehavior>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none' }}
+  >
+    <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+      <div className="responsive-table__item">
+        <button
+          className="responsive-table__button button button--secondary"
+          style={{
+            width: '100%', // Genişliği %100 olarak ayarlandı
+            marginTop: 14,
+            marginBottom: 23,
+            padding: 12,
+            backgroundColor: '#4FA834',
+            borderRadius: 8,
+            color: '#fff',
+            fontSize: '1.1rem',
+            cursor: 'pointer',
+            userSelect: 'none'
+          }}
+        >
+          Konuya Git
+        </button>
+      </div>
+    </div>
+  </a>
+</Link>
+                  <Accordion allowToggle>
+                    <AccordionItem pt={17}>
+                      <h2>
+                        <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                          <Box as="span" flex="1" textAlign="left">
+                                  `Fade`
+                          </Box>
+                          <AccordionIcon />
+                        </AccordionButton>
+                      </h2>
+                      <AccordionPanel pt={17}>
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/yatay-fade.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+
+<Link href="/hitgun/genis/fade" legacyBehavior>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none' }}
+  >
+    <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+      <div className="responsive-table__item">
+        <button
+          className="responsive-table__button button button--secondary"
+          style={{
+            width: '100%', // Genişliği %100 olarak ayarlandı
+            marginTop: 14,
+            marginBottom: 23,
+            padding: 12,
+            backgroundColor: '#4FA834',
+            borderRadius: 8,
+            color: '#fff',
+            fontSize: '1.1rem',
+            cursor: 'pointer',
+            userSelect: 'none'
+          }}
+        >
+          Konuya Git
+        </button>
+      </div>
+    </div>
+  </a>
+</Link>
+                      </AccordionPanel>
+                    </AccordionItem>
+                    {/* Dakika */}
+                    <AccordionItem>
+                      <h2>
+                        <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                          <Box as="span" flex="1" textAlign="left">
+                                  `Klip`
+                          </Box>
+                          <AccordionIcon />
+                        </AccordionButton>
+                      </h2>
+                      <AccordionPanel pt={17}>
+    
+ <span style={{ fontWeight: 'bold', fontSize: '24px' }}>
+                    ▶️ Klip
+
+                    </span>
+    
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/yatay-klip.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+    
+ <span style={{ fontWeight: 'bold', fontSize: '24px' }}>
+                    ▶️ Klip Intro/Outro
+
+                    </span>
+    
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/yatay-intro-outro.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+    
+ <span style={{ fontWeight: 'bold', fontSize: '24px' }}>
+                    ▶️ Özel Klip
+
+                    </span>
+    
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/yatay-ozelklip.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+
+<Link href="/hitgun/genis/klip" legacyBehavior>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none' }}
+  >
+    <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+      <div className="responsive-table__item">
+        <button
+          className="responsive-table__button button button--secondary"
+          style={{
+            width: '100%', // Genişliği %100 olarak ayarlandı
+            marginTop: 14,
+            marginBottom: 23,
+            padding: 12,
+            backgroundColor: '#4FA834',
+            borderRadius: 8,
+            color: '#fff',
+            fontSize: '1.1rem',
+            cursor: 'pointer',
+            userSelect: 'none'
+          }}
+        >
+          Konuya Git
+        </button>
+      </div>
+    </div>
+  </a>
+</Link>
+
+<Accordion allowToggle>
+                    <AccordionItem pt={17}>
+                      <h2>
+                        <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                          <Box as="span" flex="1" textAlign="left">
+                                    `Geçiş`
+                          </Box>
+                          <AccordionIcon />
+                        </AccordionButton>
+                      </h2>
+                      <AccordionPanel pt={17}>
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/yatay-gecis.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+
+<Link href="/hitgun/genis/klip/gecis" legacyBehavior>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none' }}
+  >
+    <div className="responsive-table__row" style={{ marginBottom: 23, textAlign: 'center' }}>
+      <div className="responsive-table__item">
+        <button
+          className="responsive-table__button button button--secondary"
+          style={{
+            width: '100%', // Genişliği %100 olarak ayarlandı
+            marginTop: 14,
+            padding: 12,
+            backgroundColor: '#4FA834',
+            borderRadius: 8,
+            color: '#fff',
+            fontSize: '1.1rem',
+            cursor: 'pointer',
+            userSelect: 'none'
+          }}
+        >
+          Konuya Git
+        </button>
+      </div>
+    </div>
+  </a>
+</Link>
+                      </AccordionPanel>
+                    </AccordionItem>
+</Accordion>
+
+                      </AccordionPanel>
+                    </AccordionItem>            
+                   </Accordion>
+                </AccordionPanel>
+        </AccordionItem>
+        <AccordionItem>
+          <h2>
+            <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+              <Box as="span" flex="1" textAlign="left">
+               `Altyazı`
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h2>
+          <AccordionPanel pt={17}>
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/altyazi.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+
+<Link href="/hitgun/altyazi" legacyBehavior>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none' }}
+  >
+    <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+      <div className="responsive-table__item">
+        <button
+          className="responsive-table__button button button--secondary"
+          style={{
+            width: '100%', // Genişliği %100 olarak ayarlandı
+            marginTop: 14,
+            marginBottom: 23,
+            padding: 12,
+            backgroundColor: '#4FA834',
+            borderRadius: 8,
+            color: '#fff',
+            fontSize: '1.1rem',
+            cursor: 'pointer',
+            userSelect: 'none'
+          }}
+        >
+          Konuya Git
+        </button>
+      </div>
+    </div>
+  </a>
+</Link>
+          </AccordionPanel>
+        </AccordionItem>
+      </Accordion>
+    </AccordionPanel>
+  </AccordionItem>
+ 
+ 
+  <AccordionItem>
+    <h2>
+      <AccordionButton _expanded={{ bg: '#C7B06C', color: 'white' }}>
+        <Box as="span" flex="1" textAlign="left">
+           **Boost**
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pt={17}>
+            <video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/boost.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+
+<Link href="/boost" legacyBehavior>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none' }}
+  >
+    <div className="responsive-table__row" style={{ marginBottom: 23, textAlign: 'center' }}>
+      <div className="responsive-table__item">
+        <button
+          className="responsive-table__button button button--secondary"
+          style={{
+            width: '100%', // Genişliği %100 olarak ayarlandı
+            marginTop: 14,
+            padding: 12,
+            backgroundColor: '#4FA834',
+            borderRadius: 8,
+            color: '#fff',
+            fontSize: '1.1rem',
+            cursor: 'pointer',
+            userSelect: 'none'
+          }}
+        >
+          Konuya Git
+        </button>
+      </div>
+    </div>
+  </a>
+</Link>
+    </AccordionPanel>
+  </AccordionItem>
+  
+  
+  
+  <AccordionItem>
+    <h2>
+      <AccordionButton _expanded={{ bg: '#C7B06C', color: 'white' }}>
+        <Box as="span" flex="1" textAlign="left">
+           **Multi**
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pt={17}>
+            <video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/multi.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+
+<Link href="/multi" legacyBehavior>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none' }}
+  >
+    <div className="responsive-table__row" style={{ marginBottom: 23, textAlign: 'center' }}>
+      <div className="responsive-table__item">
+        <button
+          className="responsive-table__button button button--secondary"
+          style={{
+            width: '100%', // Genişliği %100 olarak ayarlandı
+            marginTop: 14,
+            padding: 12,
+            backgroundColor: '#4FA834',
+            borderRadius: 8,
+            color: '#fff',
+            fontSize: '1.1rem',
+            cursor: 'pointer',
+            userSelect: 'none'
+          }}
+        >
+          Konuya Git
+        </button>
+      </div>
+    </div>
+  </a>
+</Link>
+    </AccordionPanel>
+  </AccordionItem>
+  
+
+  <AccordionItem>
+    <h2>
+      <AccordionButton _expanded={{ bg: '#C7B06C', color: 'white' }}>
+        <Box as="span" flex="1" textAlign="left">
+           **Single**
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pt={17}>
+            <video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/single.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+
+<Link href="/single" legacyBehavior>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none' }}
+  >
+    <div className="responsive-table__row" style={{ marginBottom: 23, textAlign: 'center' }}>
+      <div className="responsive-table__item">
+        <button
+          className="responsive-table__button button button--secondary"
+          style={{
+            width: '100%', // Genişliği %100 olarak ayarlandı
+            marginTop: 14,
+            padding: 12,
+            backgroundColor: '#4FA834',
+            borderRadius: 8,
+            color: '#fff',
+            fontSize: '1.1rem',
+            cursor: 'pointer',
+            userSelect: 'none'
+          }}
+        >
+          Konuya Git
+        </button>
+      </div>
+    </div>
+  </a>
+</Link>
+    </AccordionPanel>
+  </AccordionItem>
+
+
+  <AccordionItem>
+    <h2>
+      <AccordionButton _expanded={{ bg: '#C7B06C', color: 'white' }}>
+        <Box as="span" flex="1" textAlign="left">
+           **Ortak**
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    				<AccordionPanel pb={4}>
+                
+                  <Accordion allowToggle>
+                          <AccordionItem>
+          <h2>
+            <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+              <Box as="span" flex="1" textAlign="left">
+                    `Kaynak`
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h2>
+          <AccordionPanel pb={4}>
+            <AccordionPanel pb={4}>
+              {/* Rastgele */}
+              <Accordion allowToggle>
+                <AccordionItem>
+                  <h2>
+                    <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                      <Box as="span" flex="1" textAlign="left">
+                              `URL List`
+                      </Box>
+                      <AccordionIcon />
+                    </AccordionButton>
+                  </h2>
+                  <AccordionPanel pt={17}>
+    
+                   <span style={{ fontWeight: 'bold', fontSize: '24px' }}>
+                    ▶️ Fabrika
+
+                    </span>
+    
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/kaynak-urllist-fabrika.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+    
+ <span style={{ fontWeight: 'bold', fontSize: '24px' }}>
+                    ▶️ Geniş
+
+                    </span>
+    
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/kaynak-urllist-genis.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+    
+<span style={{ fontWeight: 'bold', fontSize: '24px' }}>
+                    ▶️ Viral
+
+                    </span>
+    
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/kaynak-urllist-viral.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+
+<Link href="/ortak/kaynak" legacyBehavior>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none' }}
+  >
+    <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+      <div className="responsive-table__item">
+        <button
+          className="responsive-table__button button button--secondary"
+          style={{
+            width: '100%', // Genişliği %100 olarak ayarlandı
+            marginTop: 14,
+            marginBottom: 23,
+            padding: 12,
+            backgroundColor: '#4FA834',
+            borderRadius: 8,
+            color: '#fff',
+            fontSize: '1.1rem',
+            cursor: 'pointer',
+            userSelect: 'none'
+          }}
+        >
+          Konuya Git
+        </button>
+      </div>
+    </div>
+  </a>
+</Link>
+                  </AccordionPanel>
+                </AccordionItem>
+                {/* Dakika */}
+                
+              </Accordion>
+            </AccordionPanel>
+          </AccordionPanel>
+          
+        </AccordionItem>  
+                    <AccordionItem>
+                      <h2>
+                        <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                          <Box as="span" flex="1" textAlign="left">
+                              `Seçenekler`
+                          </Box>
+                          <AccordionIcon />
+                        </AccordionButton>
+                      </h2>
+                      <AccordionPanel pb={4}>
+                        				<AccordionPanel pb={4}>
+                  {/* Rastgele */}
+                  <Accordion allowToggle>
+                    <AccordionItem>
+                      <h2>
+                        <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                          <Box as="span" flex="1" textAlign="left">
+                                `Video Birleştir`
+                          </Box>
+                          <AccordionIcon />
+                        </AccordionButton>
+                      </h2>
+                      <AccordionPanel pt={17}>
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/secenekler-video-birlestir.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+<Link href="/ortak/secenekler/video-birlestir" legacyBehavior>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none' }}
+  >
+    <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+      <div className="responsive-table__item">
+        <button
+          className="responsive-table__button button button--secondary"
+          style={{
+            width: '100%', // Genişliği %100 olarak ayarlandı
+            marginTop: 14,
+            marginBottom: 23,
+            padding: 12,
+            backgroundColor: '#4FA834',
+            borderRadius: 8,
+            color: '#fff',
+            fontSize: '1.1rem',
+            cursor: 'pointer',
+            userSelect: 'none'
+          }}
+        >
+          Konuya Git
+        </button>
+      </div>
+    </div>
+  </a>
+</Link>
+                      </AccordionPanel>
+                    </AccordionItem>
+                    {/* Dakika */}
+                    <AccordionItem>
+                      <h2>
+                        <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                          <Box as="span" flex="1" textAlign="left">
+                               `Görsel Ekle`
+                          </Box>
+                          <AccordionIcon />
+                        </AccordionButton>
+                      </h2>
+                      <AccordionPanel pt={17}>
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/secenekler-gorsel-ekle.mp4" type="video/mp4"fabrika-rastgel />
+  Your browser does not support the video tag.
+</video>
+
+<Link href="/ortak/secenekler/gorsel-ekle" legacyBehavior>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none' }}
+  >
+    <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+      <div className="responsive-table__item">
+        <button
+          className="responsive-table__button button button--secondary"
+          style={{
+            width: '100%', // Genişliği %100 olarak ayarlandı
+            marginTop: 14,
+            marginBottom: 23,
+            padding: 12,
+            backgroundColor: '#4FA834',
+            borderRadius: 8,
+            color: '#fff',
+            fontSize: '1.1rem',
+            cursor: 'pointer',
+            userSelect: 'none'
+          }}
+        >
+          Konuya Git
+        </button>
+      </div>
+    </div>
+  </a>
+</Link>
+                      </AccordionPanel>
+                    </AccordionItem>
+                    {/* Aralık */}
+                    <AccordionItem>
+                      <h2>
+                        <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                          <Box as="span" flex="1" textAlign="left">
+                               `Görsel Ekle(T)`
+                          </Box>
+                          <AccordionIcon />
+                        </AccordionButton>
+                      </h2>
+                      <AccordionPanel pt={17}>
+    
+                      <span style={{ fontWeight: 'bold', fontSize: '24px' }}>
+                    ▶️ Görsel Ekle(T) 
+
+                    </span>
+    
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/secenekler-transparan.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+    
+ <span style={{ fontWeight: 'bold', fontSize: '24px' }}>
+                    ▶️ Süre Aralığı
+
+                    </span>
+    
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/sure-araligi.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+
+<Link href="/ortak/secenekler/gorsel-ekle-t" legacyBehavior>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none' }}
+  >
+    <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+      <div className="responsive-table__item">
+        <button
+          className="responsive-table__button button button--secondary"
+          style={{
+            width: '100%', // Genişliği %100 olarak ayarlandı
+            marginTop: 14,
+            marginBottom: 23,
+            padding: 12,
+            backgroundColor: '#4FA834',
+            borderRadius: 8,
+            color: '#fff',
+            fontSize: '1.1rem',
+            cursor: 'pointer',
+            userSelect: 'none'
+          }}
+        >
+          Konuya Git
+        </button>
+      </div>
+    </div>
+  </a>
+</Link>
+                      </AccordionPanel>
+                    </AccordionItem>
+					<AccordionItem>
+                      <h2>
+                        <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                          <Box as="span" flex="1" textAlign="left">
+                               `Logo Ekle`
+                          </Box>
+                          <AccordionIcon />
+                        </AccordionButton>
+                      </h2>
+                      <AccordionPanel pt={17}>
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/secenekler-logo.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+<Link href="/ortak/secenekler/logo-ekle" legacyBehavior>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none' }}
+  >
+    <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+      <div className="responsive-table__item">
+        <button
+          className="responsive-table__button button button--secondary"
+          style={{
+            width: '100%', // Genişliği %100 olarak ayarlandı
+            marginTop: 14,
+            marginBottom: 23,
+            padding: 12,
+            backgroundColor: '#4FA834',
+            borderRadius: 8,
+            color: '#fff',
+            fontSize: '1.1rem',
+            cursor: 'pointer',
+            userSelect: 'none'
+          }}
+        >
+          Konuya Git
+        </button>
+      </div>
+    </div>
+  </a>
+</Link>
+                      </AccordionPanel>
+                    </AccordionItem>
+					<AccordionItem>
+                      <h2>
+                        <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                          <Box as="span" flex="1" textAlign="left">
+                               `Ses Ekle`
+                          </Box>
+                          <AccordionIcon />
+                        </AccordionButton>
+                      </h2>
+                      <AccordionPanel pt={17}>
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/secenekler-ses.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+<Link href="/ortak/secenekler/ses-ekle" legacyBehavior>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none' }}
+  >
+    <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+      <div className="responsive-table__item">
+        <button
+          className="responsive-table__button button button--secondary"
+          style={{
+            width: '100%', // Genişliği %100 olarak ayarlandı
+            marginTop: 14,
+            marginBottom: 23,
+            padding: 12,
+            backgroundColor: '#4FA834',
+            borderRadius: 8,
+            color: '#fff',
+            fontSize: '1.1rem',
+            cursor: 'pointer',
+            userSelect: 'none'
+          }}
+        >
+          Konuya Git
+        </button>
+      </div>
+    </div>
+  </a>
+</Link>
+                      </AccordionPanel>
+                    </AccordionItem>
+				          	<AccordionItem>
+                      <h2>
+                        <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                          <Box as="span" flex="1" textAlign="left">
+                               `Intro/Outro Ekle`
+                          </Box>
+                          <AccordionIcon />
+                        </AccordionButton>
+                      </h2>
+                      <AccordionPanel pt={17}>
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/secenekler-introoutro.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+<Link href="/ortak/secenekler/intro-outro-ekle" legacyBehavior>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none' }}
+  >
+    <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+      <div className="responsive-table__item">
+        <button
+          className="responsive-table__button button button--secondary"
+          style={{
+            width: '100%', // Genişliği %100 olarak ayarlandı
+            marginTop: 14,
+            marginBottom: 23,
+            padding: 12,
+            backgroundColor: '#4FA834',
+            borderRadius: 8,
+            color: '#fff',
+            fontSize: '1.1rem',
+            cursor: 'pointer',
+            userSelect: 'none'
+          }}
+        >
+          Konuya Git
+        </button>
+      </div>
+    </div>
+  </a>
+</Link>
+                      </AccordionPanel>
+                    </AccordionItem>
+                  </Accordion>
+                </AccordionPanel>
+                      </AccordionPanel>
+                    </AccordionItem>
+                    {/* Dakika */}
+                    <AccordionItem>
+                      <h2>
+                        <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                          <Box as="span" flex="1" textAlign="left">
+                                `Özel Tasarım`
+                          </Box>
+                          <AccordionIcon />
+                        </AccordionButton>
+                      </h2>
+                      <AccordionPanel pt={17}>
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/ozel.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+<Link href="/ortak/ozel-tasarim" legacyBehavior>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none' }}
+  >
+    <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+      <div className="responsive-table__item">
+        <button
+          className="responsive-table__button button button--secondary"
+          style={{
+            width: '100%', // Genişliği %100 olarak ayarlandı
+            marginTop: 14,
+            marginBottom: 23,
+            padding: 12,
+            backgroundColor: '#4FA834',
+            borderRadius: 8,
+            color: '#fff',
+            fontSize: '1.1rem',
+            cursor: 'pointer',
+            userSelect: 'none'
+          }}
+        >
+          Konuya Git
+        </button>
+      </div>
+    </div>
+  </a>
+</Link>
+                      </AccordionPanel>
+                    </AccordionItem>
+                    {/* Aralık */}
+                    <AccordionItem>
+                      <h2>
+                        <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                          <Box as="span" flex="1" textAlign="left">
+                                `Genel Ayarlar`
+                          </Box>
+                          <AccordionIcon />
+                        </AccordionButton>
+                      </h2>
+                                            <AccordionPanel pb={4}>
+                        				<AccordionPanel pb={4}>
+                  {/* Rastgele */}
+                  <Accordion allowToggle>
+                    <AccordionItem>
+                      <h2>
+                        <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                          <Box as="span" flex="1" textAlign="left">
+                                `Zoom`
+                          </Box>
+                          <AccordionIcon />
+                        </AccordionButton>
+                      </h2>
+                      <AccordionPanel pt={17}>
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/ayarlar-zoom.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+<Link href="/ortak/genel-ayarlar/zoom" legacyBehavior>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none' }}
+  >
+    <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+      <div className="responsive-table__item">
+        <button
+          className="responsive-table__button button button--secondary"
+          style={{
+            width: '100%', // Genişliği %100 olarak ayarlandı
+            marginTop: 14,
+            marginBottom: 23,
+            padding: 12,
+            backgroundColor: '#4FA834',
+            borderRadius: 8,
+            color: '#fff',
+            fontSize: '1.1rem',
+            cursor: 'pointer',
+            userSelect: 'none'
+          }}
+        >
+          Konuya Git
+        </button>
+      </div>
+    </div>
+  </a>
+</Link>
+                      </AccordionPanel>
+                    </AccordionItem>
+                    {/* Dakika */}
+                    <AccordionItem>
+                      <h2>
+                        <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                          <Box as="span" flex="1" textAlign="left">
+                               `Kırp`
+                          </Box>
+                          <AccordionIcon />
+                        </AccordionButton>
+                      </h2>
+                      <AccordionPanel pt={17}>
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/ayarlar-kirp.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+<Link href="/ortak/genel-ayarlar/kirp" legacyBehavior>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none' }}
+  >
+    <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+      <div className="responsive-table__item">
+        <button
+          className="responsive-table__button button button--secondary"
+          style={{
+            width: '100%', // Genişliği %100 olarak ayarlandı
+            marginTop: 14,
+            marginBottom: 23,
+            padding: 12,
+            backgroundColor: '#4FA834',
+            borderRadius: 8,
+            color: '#fff',
+            fontSize: '1.1rem',
+            cursor: 'pointer',
+            userSelect: 'none'
+          }}
+        >
+          Konuya Git
+        </button>
+      </div>
+    </div>
+  </a>
+</Link>
+                      </AccordionPanel>
+                    </AccordionItem>
+                    {/* Aralık */}
+                    <AccordionItem>
+                      <h2>
+                        <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                          <Box as="span" flex="1" textAlign="left">
+                               `Döndür`
+                          </Box>
+                          <AccordionIcon />
+                        </AccordionButton>
+                      </h2>
+                      <AccordionPanel pt={17}>
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/ayarlar-dondur.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+<Link href="/ortak/genel-ayarlar/dondur" legacyBehavior>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none' }}
+  >
+    <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+      <div className="responsive-table__item">
+        <button
+          className="responsive-table__button button button--secondary"
+          style={{
+            width: '100%', // Genişliği %100 olarak ayarlandı
+            marginTop: 14,
+            marginBottom: 23,
+            padding: 12,
+            backgroundColor: '#4FA834',
+            borderRadius: 8,
+            color: '#fff',
+            fontSize: '1.1rem',
+            cursor: 'pointer',
+            userSelect: 'none'
+          }}
+        >
+          Konuya Git
+        </button>
+      </div>
+    </div>
+  </a>
+</Link>
+                      </AccordionPanel>
+                    </AccordionItem>
+					<AccordionItem>
+                      <h2>
+                        <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                          <Box as="span" flex="1" textAlign="left">
+                               `Hızlandır`
+                          </Box>
+                          <AccordionIcon />
+                        </AccordionButton>
+                      </h2>
+                      <AccordionPanel pt={17}>
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/ayarlar-hizlandir.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+<Link href="/ortak/genel-ayarlar/hizlandir" legacyBehavior>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none' }}
+  >
+    <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+      <div className="responsive-table__item">
+        <button
+          className="responsive-table__button button button--secondary"
+          style={{
+            width: '100%', // Genişliği %100 olarak ayarlandı
+            marginTop: 14,
+            marginBottom: 23,
+            padding: 12,
+            backgroundColor: '#4FA834',
+            borderRadius: 8,
+            color: '#fff',
+            fontSize: '1.1rem',
+            cursor: 'pointer',
+            userSelect: 'none'
+          }}
+        >
+          Konuya Git
+        </button>
+      </div>
+    </div>
+  </a>
+</Link>
+                      </AccordionPanel>
+                    </AccordionItem>
+					<AccordionItem>
+                      <h2>
+                        <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                          <Box as="span" flex="1" textAlign="left">
+                               `Ayna`
+                          </Box>
+                          <AccordionIcon />
+                        </AccordionButton>
+                      </h2>
+                      <AccordionPanel pt={17}>
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/ayarlar-ayna.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+<Link href="/ortak/genel-ayarlar/ayna" legacyBehavior>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none' }}
+  >
+    <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+      <div className="responsive-table__item">
+        <button
+          className="responsive-table__button button button--secondary"
+          style={{
+            width: '100%', // Genişliği %100 olarak ayarlandı
+            marginTop: 14,
+            marginBottom: 23,
+            padding: 12,
+            backgroundColor: '#4FA834',
+            borderRadius: 8,
+            color: '#fff',
+            fontSize: '1.1rem',
+            cursor: 'pointer',
+            userSelect: 'none'
+          }}
+        >
+          Konuya Git
+        </button>
+      </div>
+    </div>
+  </a>
+</Link>
+                      </AccordionPanel>
+                    </AccordionItem>
+				          	<AccordionItem>
+                      <h2>
+                        <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                          <Box as="span" flex="1" textAlign="left">
+                               `Rounded Corners`
+                          </Box>
+                          <AccordionIcon />
+                        </AccordionButton>
+                      </h2>
+                      <AccordionPanel pt={17}>
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/ayarlar-rounded-corners.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+<Link href="/ortak/genel-ayarlar/rounded-corners" legacyBehavior>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none' }}
+  >
+    <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+      <div className="responsive-table__item">
+        <button
+          className="responsive-table__button button button--secondary"
+          style={{
+            width: '100%', // Genişliği %100 olarak ayarlandı
+            marginTop: 14,
+            marginBottom: 23,
+            padding: 12,
+            backgroundColor: '#4FA834',
+            borderRadius: 8,
+            color: '#fff',
+            fontSize: '1.1rem',
+            cursor: 'pointer',
+            userSelect: 'none'
+          }}
+        >
+          Konuya Git
+        </button>
+      </div>
+    </div>
+  </a>
+</Link>
+                      </AccordionPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                      <h2>
+                        <AccordionButton _hover={{ bg: '#282829', color: 'white' }}>
+                          <Box as="span" flex="1" textAlign="left">
+                               `Yazı`
+                          </Box>
+                          <AccordionIcon />
+                        </AccordionButton>
+                      </h2>
+                      <AccordionPanel pt={17}>
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/ayarlar-yazi.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+<Link href="/ortak/genel-ayarlar/yazi" legacyBehavior>
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none' }}
+  >
+    <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+      <div className="responsive-table__item">
+        <button
+          className="responsive-table__button button button--secondary"
+          style={{
+            width: '100%', // Genişliği %100 olarak ayarlandı
+            marginTop: 14,
+            marginBottom: 23,
+            padding: 12,
+            backgroundColor: '#4FA834',
+            borderRadius: 8,
+            color: '#fff',
+            fontSize: '1.1rem',
+            cursor: 'pointer',
+            userSelect: 'none'
+          }}
+        >
+          Konuya Git
+        </button>
+      </div>
+    </div>
+  </a>
+</Link>
+                      </AccordionPanel>
+                    </AccordionItem>
+                  </Accordion>
+                </AccordionPanel>
+                      </AccordionPanel>
+                    </AccordionItem>
+                  </Accordion>
+                </AccordionPanel>
+  </AccordionItem>
+
+</Accordion>
+
+
+
+
+
+
+
+
+
+

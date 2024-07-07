@@ -1,5 +1,9 @@
 import Image from 'next/image'
 import kaynak from 'app-images/kaynak.jpg'
+import proxy from 'app-images/proxy.jpg'
+import proxy2 from 'app-images/proxy2.jpg'
+import proxy3 from 'app-images/proxy3.jpg'
+import Link from 'next/link';
 
 # Kaynak
 
@@ -16,6 +20,31 @@ Düzenlemek istediğimiz içeriğin belirlendiği bölümdür.
 Bilgisayarımızdaki videolar ile düzenleme işlemi gerçekleştirmek istiyorsak bu seçenek kullanılır.
 
 Videolar bir klasör içine eklenir ve klasör bu seçenek ile sisteme tanımlanır.
+
+<Link href={`/ortak/kaynak#-video-e%C4%9Fitimler`}>
+  <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+    <div className="responsive-table__item">
+      <button
+        className="responsive-table__button button button--secondary"
+        style={{
+          width: '100%',  // Genişliği %100 olarak ayarlandı
+          marginTop: 14,
+          padding: 12,
+          backgroundColor: '#00AAFF',
+          borderRadius: 8,
+          color: '#fff',
+          fontSize: '1.1rem',
+          textDecoration: 'none',
+          cursor: 'pointer',
+          userSelect: 'none'
+        }}
+      >
+        Video Eğitimlere Git  
+      </button>
+    </div>
+  </div>
+</Link>
+
 
 
 ## URL
@@ -55,4 +84,158 @@ URL List kapalıysa URL'ye göre işlem yürütülür. Eğer URL'de herhangi bir
 
 </Callout>
 
+<Link href={`/ortak/kaynak#%EF%B8%8F-url-list---fabrika`}>
+  <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+    <div className="responsive-table__item">
+      <button
+        className="responsive-table__button button button--secondary"
+        style={{
+          width: '100%',  // Genişliği %100 olarak ayarlandı
+          marginTop: 14,
+          padding: 12,
+          backgroundColor: '#8C00D1',
+          borderRadius: 8,
+          color: '#fff',
+          fontSize: '1.1rem',
+          textDecoration: 'none',
+          cursor: 'pointer',
+          userSelect: 'none'
+        }}
+      >
+        Video Eğitime Git  
+      </button>
+    </div>
+  </div>
+</Link>
 
+## Proxy
+
+<Image src={proxy} />
+
+URL özelliğini Proxy ile kullanmak isterseniz Proxy seçeneğini aktif edebilirsiniz.
+
+
+### Proxy Listesi
+
+
+Proxy özelliğini kullanmak için proxylerinizin yer aldığı bir not defteri **Proxy Listesi** seçeneğinden sisteme tanımlanmalıdır.
+
+
+### Sabit Proxy Adı
+
+Kullanıcı adı ve şifre ile bağlanılan bir Proxy'e sahipseniz ve tüm proxylerinizde aynı kullanıcı ve şifre tanımlıysa, bu alana kullanıcı adınızı girebilirsiniz.
+
+
+### Sabit Proxy Şifresi
+
+Tüm proxylerinizde aynı şifre yer alıyorsa şifreyi bu alana girebilirsiniz.
+
+
+
+### Proxy Kuralları
+
+
+- Proxy türü **Http** olmak zorundadır. Https veya Socks5 proxyler desteklenmemektedir.
+
+- Kullanıcı ve şifreleri farklı olan çok sayıda proxy'e sahipseniz, not defterinde bu bilgileri
+
+`IP`:`Port`:`Username`:`Password`
+
+şeklinde girmelisiniz.
+
+Aynı kullanıcı ve şifrelere sahipseniz not defterinde sadece
+
+`IP`:`Port`
+
+girişi yapabilirsiniz. Kullanıcı adı ve şifrenizi ise **Sabit Kullanıcı Adı** ile **Sabit Proxy Şifresi** alanlarına girebilirsiniz.
+
+Herhangi bir kullanıcı adı ve şifreniz yoksa yalnızca
+
+`IP`:`Port`
+
+tanımlaması yeterlidir.
+
+
+- Proxyler not defterinde alt alta yer almalıdır.
+
+Örneğin :
+
+<Image src={proxy2} />
+
+
+- Mevcut proxyler rastgele biçimde kullanılır. Her çalışma için listeden rastgele bir proxy seçilir. 
+
+- Proxy kullanımı için en az 10 adet çalışır durumda olan http proxy türü eklemeniz önerilir.
+
+
+### Nereden Http Proxy Satın Alabilirim?
+
+[Webshare.io](https://www.webshare.io/?referral_code=ez4c6cj8l39n) adresinden satın alabilirsiniz.
+
+
+<a href="https://www.webshare.io/?referral_code=ez4c6cj8l39n" target="_blank">
+  <Image src={proxy3} width={600} height={600} />
+</a>
+
+
+<Link href={`/ortak/kaynak#%EF%B8%8F-url-list---fabrika`}>
+  <div className="responsive-table__row" style={{ textAlign: 'center' }}>
+    <div className="responsive-table__item">
+      <button
+        className="responsive-table__button button button--secondary"
+        style={{
+          width: '100%',  // Genişliği %100 olarak ayarlandı
+          marginTop: 14,
+          padding: 12,
+          backgroundColor: '#8C00D1',
+          borderRadius: 8,
+          color: '#fff',
+          fontSize: '1.1rem',
+          textDecoration: 'none',
+          cursor: 'pointer',
+          userSelect: 'none'
+        }}
+      >
+        Video Eğitime Git  
+      </button>
+    </div>
+  </div>
+</Link>
+
+
+## 📺 Video Eğitimler
+
+### ▶️ URL List - Fabrika
+    
+
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/kaynak-urllist-fabrika.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+### ▶️ URL List - Geniş
+    
+
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/kaynak-urllist-genis.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+### ▶️ URL List - Viral
+    
+
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/kaynak-urllist-viral.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
+
+### ▶️ Proxy
+    
+
+<video controls>
+  <source src="https://forum.ve3.plus/assets/files/2024-04-28/docs-turkce-egitimler/fabrika-dakika-bolum.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>

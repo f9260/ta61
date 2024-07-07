@@ -1,0 +1,168 @@
+import { Steps } from 'nextra/components'
+import bot1 from 'app-images/bot1.jpg'
+import bot2 from 'app-images/bot2.jpg'
+import bot3 from 'app-images/bot3.jpg'
+import bot4 from 'app-images/bot4.jpg'
+import bot5 from 'app-images/bot5.jpg'
+import bot6 from 'app-images/bot6.jpg'
+import bot7 from 'app-images/bot7.jpg'
+import bot8 from 'app-images/bot8.jpg'
+import bot9 from 'app-images/bot9.jpg'
+import bot10 from 'app-images/bot10.jpg'
+import bot11 from 'app-images/bot11.jpg'
+import Link from 'next/link'
+import Image from 'next/image'
+
+
+
+
+
+# Bildirim
+
+<Image src={bot11} />
+
+Bildirim özelliğini kullanarak oluşturulan videoların takibini Telegram aracılığı ile yapabilirsiniz.
+
+import { Callout } from 'nextra/components'
+ 
+<Callout type="warning" emoji="⚠️">
+  Telegram API limitleri nedeni ile bildirimler 15 dakika ara ile iletilir. 
+</Callout>
+
+
+ 
+<Callout type="info" emoji="ℹ️">
+  Çalışma tamamlandığında anında bildirim gönderilir.
+</Callout>
+
+<Callout type="error" emoji="️🚫">
+  **Viral** ve **Geniş > Klip** modunda şu anda devre dışıdır.
+</Callout>
+
+## Telegram Bildirimlerini Aktif Etme
+
+<Steps>
+### Telegram Hesabına Giriş
+
+Masaüstü uygulamanız veya telefonunuz üzerinden Telegram hesabınıza giriş yapın.
+
+### BotFather Botunu Aktif Etme
+
+Arama kısmına BotFather yazarak çıkan **"mavi tikli(onaylı)"** Bot profiline giriş yapın.
+
+
+<Image src={bot1} />
+
+Bot hesabına giriş yaptıktan sonra karşınıza çıkan ekranda, aşağıda yer alan **Start** butonuna basın.
+
+<Image src={bot2} />
+
+
+### Yeni Bot Oluşturma
+
+Start butonuna bastıktan sonra **/newbot** komutunu çalıştırın.
+
+<Image src={bot3} />
+
+
+### Bot Bilgilerini Girme
+
+Şimdi bizden botumuz için bir isim ve sonu **bot** ile biten bir kullanıcı adı istenmekte.
+
+Önce botumuza isim verip, ardından kullanıcı adımızı tanımlayalım.
+
+<Callout type="info" emoji="ℹ️">
+  Sonu bot ile biten kullanıcı adı tanımlanırken **nokta (.)** işareti kullanılamaz.
+</Callout>
+     
+
+
+<Image src={bot4} />
+
+
+### Botunuzu Başlatın
+
+Kullanıcı bilgileri girildikten sonra bot tarafından bize token, bot giriş linki gibi bilgiler iletilmekte.
+
+Yeni adımlara geçmek için öncelikle, bize iletilen bot hesabını **kırmızı ok** ile gösterilen bot linkine tıklayarak başlatalım.
+
+
+<Image src={bot5} />
+
+
+Botumuz artık aktifleştirilebilir. **Start** butonu ile botumuzu aktif hale getirelim.
+
+<Image src={bot6} />
+
+
+### Token ve Chat ID Bilgilerini Alma
+
+Botumuzu aktif hale getirdikten sonra token işlemlerine geçebiliriz.
+
+Bize verilen token bilgisini, üzerine tıklayarak kopyalayıp
+
+<Image src={bot7} />
+
+
+aşağıda yer alan linkte < TOKEN > yazan bölüme yapıştıralım.
+
+
+```ansi
+https://api.telegram.org/bot< TOKEN >/getUpdates
+```
+
+Bu işlem sonrasında elimizde buna benzer bir url oluşacak.
+
+```ansi
+https://api.telegram.org/bot7078338560:AAFaCK9F.....fKv1SK2Xf_qFzoLhSg1M/getUpdates
+```
+
+linke giriş yapıldığı zaman böyle bir ekran karşınıza gelecektir.
+
+<Image src={bot8} />
+
+
+<Callout type="warning" emoji="⚠️">
+  Yalnızca " ok: true, result[] " yazısı çıkarsa oluşturduğunuz Telegram botunuza herhangi bir yazı göndererek botu tetikleyip ardından link sayfasını yenileyiniz.
+</Callout>
+
+
+### Token ve Chat ID Entegrasyonu
+
+Token bilgimizi bot tarafından elde ettik, şimdi yukarıda yer alan link sayfasından Chat ID'yi alıp sistemimize entegre edebiliriz.
+
+"**id:**" ile ifade edilen değerler, Chat ID'imizi göstermektedir.
+
+Örneğimizde, Chat ID'mız **`id:`6126....88** şeklindedir.
+
+<Image src={bot9} />
+
+
+Şimdi tüm bu bilgileri VE3.Plus sistemimize entegre edebiliriz.
+
+- **Bot Token** : 7078338560:AAFaCK9F....fKv1SK2Xf_qFzoLhSg1M
+- **Chat ID** : 6126....88
+
+<Image src={bot10} />
+
+**İşte hepsi bu kadar...**
+
+
+### Sonuç
+
+Artık çalışmalarınızı başlattığınızda, şayet içerik üretim süreci 15 dakikadan uzunsa her 15 dakikada bir gidişata dair bilgilendirme alacaksınız.
+
+Örneğin **Boost** özelliği ile 100 video üretmek istediniz ve 15. dakikada 34. video üretilmekte.
+
+Loglara yansıyan " 34. video işleniyor.. " yazısı aynı zamanda Telegram'dan bildirim olarak hesabınızda görüntülenecektir.
+
+Bu sayede bilgisayar başında olmadığınız anlarda çalışmalarınızın gidişatını rahatlıkla takip edebileceksiniz.
+
+Çalışma tamamlandığı anda da ek bildirim gönderilecektir.
+
+
+
+
+</Steps>
+
+
