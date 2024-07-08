@@ -13,7 +13,7 @@
   "ve3plus": {
     "title": "VE3.Plus",
     "type": "page",
-    "href": "https://ve3.plus/tr"
+    "href": "https://tr.ve3.plus/"
   },
  
   "forum": {
@@ -37,7 +37,7 @@
   "en": {
     "title": "EN",
     "type": "page",
-    "href": "https://ve3.plus/guide",
+    "href": "https://guide.ve3.plus/",
     "newWindow": false
   }
   
